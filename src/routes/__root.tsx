@@ -77,11 +77,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Eletrotécnica Universal | Assistência Técnica em Nova Esperança-PR" },
+      { title: "Eletrotécnica Universal" },
       {
         name: "description",
         content:
-          "Assistência técnica especializada em eletrodomésticos e ferramentas elétricas em Nova Esperança - PR.",
+          "A melhor assistência técnica e chaveiro em Nova Esperança - PR.",
       },
       { name: "author", content: "Eletrotécnica Universal" },
       { name: "theme-color", content: "#0b1f4b" },
