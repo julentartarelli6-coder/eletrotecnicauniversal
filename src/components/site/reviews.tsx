@@ -1,7 +1,7 @@
 import { Star } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/site/section";
-import { Button } from "@/components/ui/button";
-import { REVIEWS_URL } from "@/lib/site";
+
+
 
 const TESTIMONIALS = [
   { name: "Cliente Google", text: "Excelente atendimento, com rapidez. Problema resolvido." },

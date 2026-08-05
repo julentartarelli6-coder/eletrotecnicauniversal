@@ -60,7 +60,7 @@ export function Hero() {
           </div>
 
           <ul className="mt-14 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:max-w-3xl lg:grid-cols-4">
-            {FLOATING.map((item, i) => (
+            {FLOATING.map((item) => (
               <li
                 key={item.label}
                 className="rounded-xl border border-navy-foreground/15 bg-navy-foreground/10 p-4 backdrop-blur-md transition-transform duration-300 hover:-translate-y-1"

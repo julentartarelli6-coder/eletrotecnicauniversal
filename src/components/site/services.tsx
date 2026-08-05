@@ -6,7 +6,7 @@ import {
   Plug,
   Settings2,
   WashingMachine,
-  Flame,
+  KeyRound,
 } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/site/section";
 import { whatsappLink } from "@/lib/site";
@@ -14,7 +14,7 @@ import { whatsappLink } from "@/lib/site";
 const SERVICES = [
   { icon: WashingMachine, title: "Conserto de Lavadoras", text: "Diagnóstico completo, troca de placas, motores e reparo de vazamentos." },
   { icon: Microwave, title: "Conserto de Micro-ondas", text: "Reparo de magnetron, painel eletrônico e componentes internos." },
-  { icon: Flame, title: "Conserto de Fogões", text: "Regulagem de chamas, acendimento automático e troca de peças." },
+  { icon: KeyRound, title: "Chaveiro", text: "Cópias de chaves, chaves codificadas e abertura com segurança." },
   { icon: CookingPot, title: "Conserto de Fornos Elétricos", text: "Resistências, termostatos e ajustes de temperatura precisos." },
   { icon: Droplets, title: "Conserto de Chuveiros", text: "Resistência, fiação, pressostato e instalação com segurança." },
   { icon: Plug, title: "Conserto de Eletrodomésticos", text: "Liquidificadores, ventiladores, aspiradores e muito mais." },
