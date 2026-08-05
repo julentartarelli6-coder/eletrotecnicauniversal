@@ -61,13 +61,6 @@ export function Reviews() {
           ))}
         </ul>
 
-        <Reveal className="mt-10 flex justify-center">
-          <Button asChild variant="navy" size="xl">
-            <a href={REVIEWS_URL} target="_blank" rel="noopener noreferrer">
-              Ver todas as avaliações
-            </a>
-          </Button>
-        </Reveal>
       </div>
     </section>
   );

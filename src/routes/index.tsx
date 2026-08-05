@@ -7,7 +7,6 @@ import { Products } from "@/components/site/products";
 import { Brands } from "@/components/site/brands";
 import { Differentials } from "@/components/site/differentials";
 import { Reviews } from "@/components/site/reviews";
-import { Gallery } from "@/components/site/gallery";
 import { Faq } from "@/components/site/faq";
 import { Contact } from "@/components/site/contact";
 import { Footer } from "@/components/site/footer";
@@ -41,7 +40,7 @@ export const Route = createFileRoute("/")({
           "@type": "LocalBusiness",
           name: "Eletrotécnica Universal",
           description: DESCRIPTION,
-          telephone: "+55 44 3252-4431",
+          telephone: "+55 44 99814-7575",
           address: {
             "@type": "PostalAddress",
             streetAddress: "Rua Pres. Castelo Branco, 184",
@@ -73,7 +72,6 @@ function Index() {
         <Brands />
         <Differentials />
         <Reviews />
-        <Gallery />
         <Faq />
         <Contact />
       </main>

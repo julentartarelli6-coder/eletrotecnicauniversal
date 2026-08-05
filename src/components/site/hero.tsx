@@ -63,8 +63,7 @@ export function Hero() {
             {FLOATING.map((item, i) => (
               <li
                 key={item.label}
-                style={{ animationDelay: `${i * 380}ms` }}
-                className="animate-float-soft rounded-xl border border-navy-foreground/15 bg-navy-foreground/10 p-4 backdrop-blur-md"
+                className="rounded-xl border border-navy-foreground/15 bg-navy-foreground/10 p-4 backdrop-blur-md transition-transform duration-300 hover:-translate-y-1"
               >
                 <item.icon className="size-5 text-brand-red" aria-hidden="true" />
                 <p className="mt-2 text-sm font-semibold text-navy-foreground">{item.label}</p>
