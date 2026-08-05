@@ -7,7 +7,6 @@ const LINKS = [
   { href: "#servicos", label: "Serviços" },
   { href: "#produtos", label: "Produtos" },
   { href: "#marcas", label: "Marcas" },
-  { href: "#galeria", label: "Galeria" },
   { href: "#faq", label: "Perguntas frequentes" },
   { href: "#contato", label: "Contato" },
 ];

@@ -1,12 +1,9 @@
-import { useMemo, useState } from "react";
 import { MessageCircle } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/site/section";
 import { Button } from "@/components/ui/button";
-import { CATEGORIES, PRODUCTS, type Product } from "@/data/products";
+import { PRODUCTS, type Product } from "@/data/products";
 import { whatsappLink } from "@/lib/site";
-import { cn } from "@/lib/utils";
 
-const INITIAL_COUNT = 6;
 
 function ProductCard({ product }: { product: Product }) {
   return (
@@ -53,80 +50,22 @@ function ProductCard({ product }: { product: Product }) {
 }
 
 export function Products() {
-  const [category, setCategory] = useState<string>("Todos");
-  const [showAll, setShowAll] = useState(false);
-
-  const filtered = useMemo(
-    () => (category === "Todos" ? PRODUCTS : PRODUCTS.filter((p) => p.category === category)),
-    [category],
-  );
-  const visible = showAll ? filtered : filtered.slice(0, INITIAL_COUNT);
-  const filters = ["Todos", ...CATEGORIES];
-
   return (
     <section id="produtos" className="bg-background py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Produtos"
           title="Catálogo digital de ferramentas e equipamentos"
-          description="Selecione uma categoria e fale com a gente pelo WhatsApp para consultar disponibilidade e valores."
+          description="Fale com a gente pelo WhatsApp para consultar disponibilidade e valores."
         />
 
-        <Reveal className="mt-10 flex flex-wrap justify-center gap-2">
-          {filters.map((item) => (
-            <button
-              key={item}
-              type="button"
-              onClick={() => {
-                setCategory(item);
-                setShowAll(false);
-              }}
-              aria-pressed={category === item}
-              className={cn(
-                "rounded-full border px-5 py-2 text-sm font-semibold transition-all duration-300",
-                category === item
-                  ? "border-transparent bg-navy text-navy-foreground shadow-soft"
-                  : "border-border bg-card text-muted-foreground hover:border-brand-red/50 hover:text-navy",
-              )}
-            >
-              {item}
-            </button>
+        <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {PRODUCTS.map((product, i) => (
+            <Reveal as="li" key={product.id} delay={(i % 3) * 90}>
+              <ProductCard product={product} />
+            </Reveal>
           ))}
-        </Reveal>
-
-        {visible.length > 0 ? (
-          <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {visible.map((product, i) => (
-              <Reveal as="li" key={product.id} delay={(i % 3) * 90}>
-                <ProductCard product={product} />
-              </Reveal>
-            ))}
-          </ul>
-        ) : (
-          <Reveal className="mt-12">
-            <div className="rounded-2xl border border-dashed border-border bg-secondary/50 p-12 text-center">
-              <p className="text-base font-semibold text-navy">
-                Novos produtos desta categoria em breve.
-              </p>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Fale com a gente no WhatsApp e consulte a disponibilidade.
-              </p>
-              <Button asChild variant="hero" size="lg" className="mt-6">
-                <a href={whatsappLink(`Olá! Vocês têm produtos da categoria ${category}?`)}>
-                  Consultar no WhatsApp
-                </a>
-              </Button>
-            </div>
-          </Reveal>
-        )}
-
-        {!showAll && filtered.length > INITIAL_COUNT ? (
-          <div className="mt-12 flex justify-center">
-            <Button variant="navy" size="xl" onClick={() => setShowAll(true)}>
-              Ver todos os produtos
-            </Button>
-          </div>
-        ) : null}
+        </ul>
       </div>
     </section>
   );

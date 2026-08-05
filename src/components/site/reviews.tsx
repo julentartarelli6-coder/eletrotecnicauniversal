@@ -1,7 +1,7 @@
 import { Star } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/site/section";
-import { Button } from "@/components/ui/button";
-import { REVIEWS_URL } from "@/lib/site";
+
+
 
 const TESTIMONIALS = [
   { name: "Cliente Google", text: "Excelente atendimento, com rapidez. Problema resolvido." },
@@ -61,13 +61,6 @@ export function Reviews() {
           ))}
         </ul>
 
-        <Reveal className="mt-10 flex justify-center">
-          <Button asChild variant="navy" size="xl">
-            <a href={REVIEWS_URL} target="_blank" rel="noopener noreferrer">
-              Ver todas as avaliações
-            </a>
-          </Button>
-        </Reveal>
       </div>
     </section>
   );

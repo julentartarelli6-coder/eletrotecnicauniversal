@@ -2,9 +2,9 @@ export const SITE = {
   name: "Eletrotécnica Universal",
   city: "Nova Esperança - PR",
   address: "Rua Pres. Castelo Branco, 184 — Nova Esperança - PR",
-  phoneLabel: "(44) 3252-4431",
-  phoneHref: "tel:+554432524431",
-  whatsappNumber: "554432524431",
+  phoneLabel: "(44) 99814-7575",
+  phoneHref: "tel:+5544998147575",
+  whatsappNumber: "5544998147575",
   instagram: "https://www.instagram.com/eletrotecnicauniversal",
   mapsQuery: "Rua Pres. Castelo Branco, 184, Nova Esperança - PR",
   hours: [
