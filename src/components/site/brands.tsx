@@ -7,7 +7,7 @@ const BRANDS = [
   "Elgin",
   "Jacto",
   "Bosch",
-  "Tramontina",
+  "NIGRO",
   "Black+Decker",
 ];
 
