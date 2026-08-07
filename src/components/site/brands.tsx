@@ -9,6 +9,13 @@ const BRANDS = [
   "Bosch",
   "FISCHER",
   "Black+Decker",
+  "Stanley",
+  "Colormaq",
+  "Zagonel",
+  "Britânia",
+  "Lorenzetti",
+  "Suggar",
+  "Wanke",
 ];
 
 export function Brands() {

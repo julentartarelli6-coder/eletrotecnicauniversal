@@ -66,10 +66,10 @@ function Index() {
       <Navbar />
       <main>
         <Hero />
-        <About />
-        <Services />
         <Products />
         <Brands />
+        <Services />
+        <About />
         <Differentials />
         <Reviews />
         <Faq />
