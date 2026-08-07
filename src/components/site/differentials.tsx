@@ -13,7 +13,7 @@ const ITEMS = [
 
 export function Differentials() {
   return (
-    <section className="relative isolate overflow-hidden surface-navy py-20 sm:py-28">
+    <section id="diferenciais" className="relative isolate overflow-hidden surface-navy py-20 sm:py-28">
       <div
         aria-hidden="true"
         className="absolute -right-32 top-1/2 -z-10 size-[28rem] -translate-y-1/2 rounded-full bg-brand-red/20 blur-3xl"
