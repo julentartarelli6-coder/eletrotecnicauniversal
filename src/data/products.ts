@@ -17,7 +17,7 @@ import makitaSoprador from "@/assets/makita-soprador.webp.asset.json";
 import nigroPanela from "@/assets/nigro-panela.png.asset.json";
 import zagonelTorneira from "@/assets/zagonel-torneira.jpg.asset.json";
 
-export type ProductCategory = "Ferramentas" | "Eletrodomésticos" | "Peças" | "Acessórios";
+export type ProductCategory = "Ferramentas" | "Eletrodomésticos" | "Outros";
 
 export interface Product {
   id: string;
@@ -197,7 +197,7 @@ export const PRODUCTS: Product[] = [
     id: "nigro-panela-pressao",
     name: "Panela de Pressão Expressa 4,5L",
     brand: "Nigro",
-    category: "Acessórios",
+    category: "Outros",
     description:
       "Panela de pressão em alumínio polido com 4,5 litros, cabo ergonômico e sistema de segurança.",
     image: nigroPanela.url,
@@ -218,6 +218,5 @@ export const PRODUCTS: Product[] = [
 export const CATEGORIES: ProductCategory[] = [
   "Ferramentas",
   "Eletrodomésticos",
-  "Peças",
-  "Acessórios",
+  "Outros",
 ];
