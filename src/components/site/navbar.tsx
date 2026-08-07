@@ -7,10 +7,11 @@ import { SITE, whatsappLink } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 const LINKS = [
-  { href: "#sobre", label: "Sobre" },
-  { href: "#servicos", label: "Serviços" },
   { href: "#produtos", label: "Produtos" },
   { href: "#marcas", label: "Marcas" },
+  { href: "#servicos", label: "Serviços" },
+  { href: "#sobre", label: "Sobre" },
+  { href: "#diferenciais", label: "Diferenciais" },
   { href: "#avaliacoes", label: "Avaliações" },
   { href: "#faq", label: "FAQ" },
   { href: "#contato", label: "Contato" },
