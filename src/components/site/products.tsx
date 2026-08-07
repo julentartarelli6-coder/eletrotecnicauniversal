@@ -1,9 +1,14 @@
+import { useState } from "react";
 import { MessageCircle } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/site/section";
 import { Button } from "@/components/ui/button";
-import { PRODUCTS, type Product } from "@/data/products";
+import { PRODUCTS, CATEGORIES, type Product, type ProductCategory } from "@/data/products";
 import { whatsappLink } from "@/lib/site";
+import { cn } from "@/lib/utils";
 
+type Filter = "Todos" | ProductCategory;
+
+const FILTERS: Filter[] = ["Todos", ...CATEGORIES];
 
 function ProductCard({ product }: { product: Product }) {
   return (
@@ -50,6 +55,10 @@ function ProductCard({ product }: { product: Product }) {
 }
 
 export function Products() {
+  const [active, setActive] = useState<Filter>("Todos");
+  const filtered =
+    active === "Todos" ? PRODUCTS : PRODUCTS.filter((p) => p.category === active);
+
   return (
     <section id="produtos" className="bg-background py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -59,13 +68,37 @@ export function Products() {
           description="Fale com a gente pelo WhatsApp para consultar disponibilidade e valores."
         />
 
-        <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {PRODUCTS.map((product, i) => (
+        <div className="mt-10 flex flex-wrap justify-center gap-2">
+          {FILTERS.map((filter) => (
+            <button
+              key={filter}
+              onClick={() => setActive(filter)}
+              className={cn(
+                "rounded-full px-4 py-2 text-sm font-semibold transition-colors",
+                active === filter
+                  ? "bg-navy text-white"
+                  : "border border-border bg-card text-muted-foreground hover:text-navy",
+              )}
+              aria-pressed={active === filter}
+            >
+              {filter}
+            </button>
+          ))}
+        </div>
+
+        <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {filtered.map((product, i) => (
             <Reveal as="li" key={product.id} delay={(i % 3) * 90}>
               <ProductCard product={product} />
             </Reveal>
           ))}
         </ul>
+
+        {filtered.length === 0 && (
+          <p className="mt-10 text-center text-sm text-muted-foreground">
+            Nenhum produto nesta categoria no momento. Fale com a gente pelo WhatsApp.
+          </p>
+        )}
       </div>
     </section>
   );
