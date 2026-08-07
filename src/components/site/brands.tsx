@@ -4,10 +4,10 @@ import { Reveal, SectionHeading } from "@/components/site/section";
 const BRANDS = [
   "Makita",
   "DeWalt",
-  "Elgin",
+  "MUELLER",
   "Jacto",
   "Bosch",
-  "NIGRO",
+  "FISCHER",
   "Black+Decker",
 ];
 
@@ -16,9 +16,9 @@ export function Brands() {
     <section id="marcas" className="bg-background py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Marcas atendidas"
-          title="Trabalhamos com as principais marcas do mercado"
-          description="Peças, acessórios e manutenção especializada para equipamentos profissionais e domésticos."
+          eyebrow="MARCAS AUTORIZADAS"
+          title="Assistência Técnica Autorizada"
+          description="Peças, acessórios e manutenção autorizada para as melhores marcas."
         />
 
         <ul className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
