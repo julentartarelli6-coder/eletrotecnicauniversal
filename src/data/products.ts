@@ -107,8 +107,8 @@ export const PRODUCTS: Product[] = [
 
   // Jacto
   {
-    id: "jacto-j7000",
-    name: "Lavadora de Alta Pressão J7000",
+    id: "jacto-j6000",
+    name: "Lavadora de Alta Pressão J6000",
     brand: "Jacto",
     category: "Ferramentas",
     description:
