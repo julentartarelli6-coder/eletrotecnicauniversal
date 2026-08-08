@@ -26,6 +26,9 @@ import zagonelQuadratta from "@/assets/zagonel-quadratta.webp.asset.json";
 import zagonelMomentiBlack from "@/assets/zagonel-momenti-black.webp.asset.json";
 import zagonelFluir from "@/assets/zagonel-fluir.webp.asset.json";
 import lorenzettiLorenEasy from "@/assets/lorenzetti-loren-easy.png.asset.json";
+import roaFogaoIndustrial from "@/assets/roa-fogao-industrial.png.asset.json";
+import vithoryEspremedor from "@/assets/vithory-espremedor.png.asset.json";
+import vithoryLiquidificador from "@/assets/vithory-liquidificador.png.asset.json";
 
 export type ProductCategory = "Ferramentas" | "Eletrodomésticos" | "Outros";
 
@@ -274,6 +277,37 @@ export const PRODUCTS: Product[] = [
     description:
       "Panela de pressão Nigro Eterna 6 litros em alumínio polido, ideal para famílias maiores.",
     image: nigroEterna60.url,
+  },
+
+  // Roa
+  {
+    id: "roa-fogao-industrial-2-bocas",
+    name: "Fogão Industrial 2 Bocas com Cavalete",
+    brand: "Roa",
+    category: "Eletrodomésticos",
+    description:
+      "Fogão industrial de 2 bocas em chapa reforçada, com queimadores de alta pressão, bandejas removíveis e cavalete de apoio.",
+    image: roaFogaoIndustrial.url,
+  },
+
+  // Vithory
+  {
+    id: "vithory-espremedor-inox",
+    name: "Espremedor / Extrator de Sucos Inox Profissional",
+    brand: "Vithory",
+    category: "Eletrodomésticos",
+    description:
+      "Extrator profissional em aço inox para laranja e limão, com alto rendimento e fácil limpeza para uso comercial.",
+    image: vithoryEspremedor.url,
+  },
+  {
+    id: "vithory-liquidificador-2l",
+    name: "Liquidificador Industrial Inox 2 Litros",
+    brand: "Vithory",
+    category: "Eletrodomésticos",
+    description:
+      "Liquidificador de alta rotação com copo em aço inox de 2 litros, sistema de fácil limpeza e motor reforçado.",
+    image: vithoryLiquidificador.url,
   },
 
   // Zagonel
