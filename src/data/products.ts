@@ -134,6 +134,24 @@ export const PRODUCTS: Product[] = [
       "Compacta e resistente, com enrolador de mangueira e ótimo desempenho para uso doméstico e profissional.",
     image: jactoJ6800.url,
   },
+  {
+    id: "jacto-j7000-plus",
+    name: "Lavadora de Alta Pressão J7000 Plus",
+    brand: "Jacto",
+    category: "Ferramentas",
+    description:
+      "Lavadora com sistema Stop Total, alta pressão e mangueira reforçada para limpeza pesada.",
+    image: jactoJ7000Plus.url,
+  },
+  {
+    id: "jacto-j7-pro-s",
+    name: "Lavadora de Alta Pressão J7 Pro-S",
+    brand: "Jacto",
+    category: "Ferramentas",
+    description:
+      "Modelo profissional com carrinho de transporte, pistola ergonômica e Stop Total para uso intenso.",
+    image: jactoJ7Pro.url,
+  },
 
   // Lorenzetti
   {
