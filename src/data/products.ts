@@ -212,6 +212,24 @@ export const PRODUCTS: Product[] = [
       "Panela de pressão em alumínio polido com 4,5 litros, cabo ergonômico e sistema de segurança.",
     image: nigroPanela.url,
   },
+  {
+    id: "nigro-eterna-45",
+    name: "Panela de Pressão Eterna 4,5L Vermelha",
+    brand: "Nigro",
+    category: "Outros",
+    description:
+      "Panela de pressão Nigro Eterna 4,5L com acabamento colorido, tampa em alumínio e sistema de segurança.",
+    image: nigroEterna45.url,
+  },
+  {
+    id: "nigro-eterna-60",
+    name: "Panela de Pressão Eterna Polida 6L",
+    brand: "Nigro",
+    category: "Outros",
+    description:
+      "Panela de pressão Nigro Eterna 6 litros em alumínio polido, ideal para famílias maiores.",
+    image: nigroEterna60.url,
+  },
 
   // Zagonel
   {
