@@ -119,7 +119,7 @@ export const PRODUCTS: Product[] = [
     id: "dewalt-canivete-quickflip",
     name: "Canivete Quick Flip Lâmina Inox",
     brand: "DeWalt",
-    category: "Outros",
+    category: "Ferramentas",
     description:
       "Canivete dobrável com lâmina em aço inox, abertura rápida com rolamento e cabo em alumínio.",
     image: dewaltCanivete.url,
