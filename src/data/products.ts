@@ -16,6 +16,16 @@ import lorenzettiAcquaDuo from "@/assets/lorenzetti-acqua-duo.webp.asset.json";
 import makitaSoprador from "@/assets/makita-soprador.webp.asset.json";
 import nigroPanela from "@/assets/nigro-panela.png.asset.json";
 import zagonelTorneira from "@/assets/zagonel-torneira.jpg.asset.json";
+import dewaltTrena from "@/assets/dewalt-trena.jpg.asset.json";
+import dewaltCanivete from "@/assets/dewalt-canivete.jpg.asset.json";
+import nigroEterna45 from "@/assets/nigro-eterna-45.png.asset.json";
+import nigroEterna60 from "@/assets/nigro-eterna-60.webp.asset.json";
+import jactoJ7Pro from "@/assets/jacto-j7-pro.jpg.asset.json";
+import jactoJ7000Plus from "@/assets/jacto-j7000-plus.jpg.asset.json";
+import zagonelQuadratta from "@/assets/zagonel-quadratta.webp.asset.json";
+import zagonelMomentiBlack from "@/assets/zagonel-momenti-black.webp.asset.json";
+import zagonelFluir from "@/assets/zagonel-fluir.webp.asset.json";
+import lorenzettiLorenEasy from "@/assets/lorenzetti-loren-easy.png.asset.json";
 
 export type ProductCategory = "Ferramentas" | "Eletrodomésticos" | "Outros";
 
@@ -93,6 +103,24 @@ export const PRODUCTS: Product[] = [
       "Soprador com fio para limpeza de oficinas, bancadas e máquinas. Vazão de ar regulável.",
     image: dewaltSoprador.url,
   },
+  {
+    id: "dewalt-trena-8m",
+    name: "Trena DeWalt 8m / 26\"",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Trena de 8 metros com fita resistente, trava firme e corpo emborrachado para uso em obra.",
+    image: dewaltTrena.url,
+  },
+  {
+    id: "dewalt-canivete-quickflip",
+    name: "Canivete Quick Flip Lâmina Inox",
+    brand: "DeWalt",
+    category: "Outros",
+    description:
+      "Canivete dobrável com lâmina em aço inox, abertura rápida com rolamento e cabo em alumínio.",
+    image: dewaltCanivete.url,
+  },
 
   // Elgin
   {
@@ -124,6 +152,24 @@ export const PRODUCTS: Product[] = [
       "Compacta e resistente, com enrolador de mangueira e ótimo desempenho para uso doméstico e profissional.",
     image: jactoJ6800.url,
   },
+  {
+    id: "jacto-j7000-plus",
+    name: "Lavadora de Alta Pressão J7000 Plus",
+    brand: "Jacto",
+    category: "Ferramentas",
+    description:
+      "Lavadora com sistema Stop Total, alta pressão e mangueira reforçada para limpeza pesada.",
+    image: jactoJ7000Plus.url,
+  },
+  {
+    id: "jacto-j7-pro-s",
+    name: "Lavadora de Alta Pressão J7 Pro-S",
+    brand: "Jacto",
+    category: "Ferramentas",
+    description:
+      "Modelo profissional com carrinho de transporte, pistola ergonômica e Stop Total para uso intenso.",
+    image: jactoJ7Pro.url,
+  },
 
   // Lorenzetti
   {
@@ -152,6 +198,15 @@ export const PRODUCTS: Product[] = [
     description:
       "Design cromado com chuveiro e ducha independentes, acionamento eletrônico e alta vazão.",
     image: lorenzettiAcquaDuo.url,
+  },
+  {
+    id: "lorenzetti-loren-easy",
+    name: "Torneira Elétrica Loren Easy Parede",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Torneira elétrica branca de parede com bica alta giratória e três temperaturas de aquecimento.",
+    image: lorenzettiLorenEasy.url,
   },
 
   // Makita
@@ -202,6 +257,24 @@ export const PRODUCTS: Product[] = [
       "Panela de pressão em alumínio polido com 4,5 litros, cabo ergonômico e sistema de segurança.",
     image: nigroPanela.url,
   },
+  {
+    id: "nigro-eterna-45",
+    name: "Panela de Pressão Eterna 4,5L Vermelha",
+    brand: "Nigro",
+    category: "Outros",
+    description:
+      "Panela de pressão Nigro Eterna 4,5L com acabamento colorido, tampa em alumínio e sistema de segurança.",
+    image: nigroEterna45.url,
+  },
+  {
+    id: "nigro-eterna-60",
+    name: "Panela de Pressão Eterna Polida 6L",
+    brand: "Nigro",
+    category: "Outros",
+    description:
+      "Panela de pressão Nigro Eterna 6 litros em alumínio polido, ideal para famílias maiores.",
+    image: nigroEterna60.url,
+  },
 
   // Zagonel
   {
@@ -212,6 +285,33 @@ export const PRODUCTS: Product[] = [
     description:
       "Torneira eletrônica com acionamento touch, bica giratória e instalação em bancada ou parede.",
     image: zagonelTorneira.url,
+  },
+  {
+    id: "zagonel-quadratta",
+    name: "Ducha Quadratta Eletrônica 5500W 127V",
+    brand: "Zagonel",
+    category: "Eletrodomésticos",
+    description:
+      "Ducha branca de design quadrado com temperatura eletrônica, grande espalhador e alta vazão.",
+    image: zagonelQuadratta.url,
+  },
+  {
+    id: "zagonel-momenti-black",
+    name: "Ducha Momenti Black Eletrônica",
+    brand: "Zagonel",
+    category: "Eletrodomésticos",
+    description:
+      "Acabamento preto brilhante, espalhador redondo amplo e ajuste eletrônico de temperatura.",
+    image: zagonelMomentiBlack.url,
+  },
+  {
+    id: "zagonel-fluir",
+    name: "Ducha Fluir 4 Temperaturas 6800W 220V",
+    brand: "Zagonel",
+    category: "Eletrodomésticos",
+    description:
+      "Chuveiro econômico com 4 temperaturas, jatos intensos e kit com mangueira e desviador.",
+    image: zagonelFluir.url,
   },
 ];
 
