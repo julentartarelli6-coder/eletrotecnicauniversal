@@ -250,7 +250,6 @@ export const PRODUCTS: Product[] = [
       "Chuveiro econômico com 4 temperaturas, jatos intensos e kit com mangueira e desviador.",
     image: zagonelFluir.url,
   },
-  },
 ];
 
 export const CATEGORIES: ProductCategory[] = [
