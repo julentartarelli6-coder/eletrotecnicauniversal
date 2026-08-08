@@ -251,6 +251,25 @@ export const PRODUCTS: Product[] = [
       "Kit com bateria 3.0Ah e carregador. Leve, silencioso e ideal para limpeza de pátios e oficinas.",
     image: makitaSoprador.url,
   },
+  {
+    id: "makita-rompedor-sds-max",
+    name: "Rompedor / Martelete Makita com Maleta",
+    brand: "Makita",
+    category: "Ferramentas",
+    description:
+      "Martelete rompedor elétrico com encaixe SDS, alto impacto para demolição e perfuração em concreto. Acompanha maleta de transporte.",
+    image: makitaRompedor.url,
+  },
+  {
+    id: "makita-soprador-m4000g",
+    name: "Soprador de Ar M4000G 530W 220V",
+    brand: "Makita",
+    category: "Ferramentas",
+    description:
+      "Soprador elétrico compacto de 530W, ideal para limpeza de bancadas, máquinas e oficinas. Bico direcionador removível.",
+    image: makitaM4000g.url,
+  },
+
 
   // Nigro
   {
