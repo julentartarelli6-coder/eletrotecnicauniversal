@@ -282,7 +282,7 @@ export const PRODUCTS: Product[] = [
   // Roa
   {
     id: "roa-fogao-industrial-2-bocas",
-    name: "Fogão Industrial 2 Bocas com Cavalete",
+    name: "Fogão Industrial  2  Bocas ",
     brand: "Roa",
     category: "Eletrodomésticos",
     description:
@@ -293,7 +293,7 @@ export const PRODUCTS: Product[] = [
   // Vithory
   {
     id: "vithory-espremedor-inox",
-    name: "Espremedor / Extrator de Sucos Inox Profissional",
+    name: "Espremedor / Extrator de Sucos Inox Profissional Vithory",
     brand: "Vithory",
     category: "Eletrodomésticos",
     description:
@@ -302,7 +302,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "vithory-liquidificador-2l",
-    name: "Liquidificador Industrial Inox 2 Litros",
+    name: "Liquidificador Industrial Inox 2 Litros Vithory",
     brand: "Vithory",
     category: "Eletrodomésticos",
     description:
