@@ -103,6 +103,24 @@ export const PRODUCTS: Product[] = [
       "Soprador com fio para limpeza de oficinas, bancadas e máquinas. Vazão de ar regulável.",
     image: dewaltSoprador.url,
   },
+  {
+    id: "dewalt-trena-8m",
+    name: "Trena DeWalt 8m / 26\"",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Trena de 8 metros com fita resistente, trava firme e corpo emborrachado para uso em obra.",
+    image: dewaltTrena.url,
+  },
+  {
+    id: "dewalt-canivete-quickflip",
+    name: "Canivete Quick Flip Lâmina Inox",
+    brand: "DeWalt",
+    category: "Outros",
+    description:
+      "Canivete dobrável com lâmina em aço inox, abertura rápida com rolamento e cabo em alumínio.",
+    image: dewaltCanivete.url,
+  },
 
   // Elgin
   {
