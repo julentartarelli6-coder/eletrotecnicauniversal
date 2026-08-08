@@ -223,6 +223,34 @@ export const PRODUCTS: Product[] = [
       "Torneira eletrônica com acionamento touch, bica giratória e instalação em bancada ou parede.",
     image: zagonelTorneira.url,
   },
+  {
+    id: "zagonel-quadratta",
+    name: "Ducha Quadratta Eletrônica 5500W 127V",
+    brand: "Zagonel",
+    category: "Eletrodomésticos",
+    description:
+      "Ducha branca de design quadrado com temperatura eletrônica, grande espalhador e alta vazão.",
+    image: zagonelQuadratta.url,
+  },
+  {
+    id: "zagonel-momenti-black",
+    name: "Ducha Momenti Black Eletrônica",
+    brand: "Zagonel",
+    category: "Eletrodomésticos",
+    description:
+      "Acabamento preto brilhante, espalhador redondo amplo e ajuste eletrônico de temperatura.",
+    image: zagonelMomentiBlack.url,
+  },
+  {
+    id: "zagonel-fluir",
+    name: "Ducha Fluir 4 Temperaturas 6800W 220V",
+    brand: "Zagonel",
+    category: "Eletrodomésticos",
+    description:
+      "Chuveiro econômico com 4 temperaturas, jatos intensos e kit com mangueira e desviador.",
+    image: zagonelFluir.url,
+  },
+  },
 ];
 
 export const CATEGORIES: ProductCategory[] = [
