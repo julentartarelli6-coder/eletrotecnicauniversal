@@ -8,7 +8,6 @@ const ITEMS = [
   "Peças de qualidade",
   "Preço justo",
   "Atendimento personalizado",
-  "Empresa bem avaliada pelos clientes",
 ];
 
 export function Differentials() {
