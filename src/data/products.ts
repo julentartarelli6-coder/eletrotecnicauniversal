@@ -16,6 +16,16 @@ import lorenzettiAcquaDuo from "@/assets/lorenzetti-acqua-duo.webp.asset.json";
 import makitaSoprador from "@/assets/makita-soprador.webp.asset.json";
 import nigroPanela from "@/assets/nigro-panela.png.asset.json";
 import zagonelTorneira from "@/assets/zagonel-torneira.jpg.asset.json";
+import dewaltTrena from "@/assets/dewalt-trena.jpg.asset.json";
+import dewaltCanivete from "@/assets/dewalt-canivete.jpg.asset.json";
+import nigroEterna45 from "@/assets/nigro-eterna-45.png.asset.json";
+import nigroEterna60 from "@/assets/nigro-eterna-60.webp.asset.json";
+import jactoJ7Pro from "@/assets/jacto-j7-pro.jpg.asset.json";
+import jactoJ7000Plus from "@/assets/jacto-j7000-plus.jpg.asset.json";
+import zagonelQuadratta from "@/assets/zagonel-quadratta.webp.asset.json";
+import zagonelMomentiBlack from "@/assets/zagonel-momenti-black.webp.asset.json";
+import zagonelFluir from "@/assets/zagonel-fluir.webp.asset.json";
+import lorenzettiLorenEasy from "@/assets/lorenzetti-loren-easy.png.asset.json";
 
 export type ProductCategory = "Ferramentas" | "Eletrodomésticos" | "Outros";
 
