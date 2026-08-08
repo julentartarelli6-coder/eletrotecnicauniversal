@@ -26,6 +26,9 @@ import zagonelQuadratta from "@/assets/zagonel-quadratta.webp.asset.json";
 import zagonelMomentiBlack from "@/assets/zagonel-momenti-black.webp.asset.json";
 import zagonelFluir from "@/assets/zagonel-fluir.webp.asset.json";
 import lorenzettiLorenEasy from "@/assets/lorenzetti-loren-easy.png.asset.json";
+import roaFogaoIndustrial from "@/assets/roa-fogao-industrial.png.asset.json";
+import vithoryEspremedor from "@/assets/vithory-espremedor.png.asset.json";
+import vithoryLiquidificador from "@/assets/vithory-liquidificador.png.asset.json";
 
 export type ProductCategory = "Ferramentas" | "Eletrodomésticos" | "Outros";
 
