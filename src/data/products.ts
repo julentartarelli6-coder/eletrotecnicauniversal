@@ -163,6 +163,15 @@ export const PRODUCTS: Product[] = [
       "Design cromado com chuveiro e ducha independentes, acionamento eletrônico e alta vazão.",
     image: lorenzettiAcquaDuo.url,
   },
+  {
+    id: "lorenzetti-loren-easy",
+    name: "Torneira Elétrica Loren Easy Parede",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Torneira elétrica branca de parede com bica alta giratória e três temperaturas de aquecimento.",
+    image: lorenzettiLorenEasy.url,
+  },
 
   // Makita
   {
