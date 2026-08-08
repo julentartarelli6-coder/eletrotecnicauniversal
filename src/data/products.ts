@@ -14,6 +14,8 @@ import jactoJ6800 from "@/assets/jacto-j6800.webp.asset.json";
 import lorenzettiDuoShower from "@/assets/lorenzetti-duo-shower.webp.asset.json";
 import lorenzettiAcquaDuo from "@/assets/lorenzetti-acqua-duo.webp.asset.json";
 import makitaSoprador from "@/assets/makita-soprador.webp.asset.json";
+import makitaRompedor from "@/assets/makita-rompedor.png.asset.json";
+import makitaM4000g from "@/assets/makita-m4000g.png.asset.json";
 import nigroPanela from "@/assets/nigro-panela.png.asset.json";
 import zagonelTorneira from "@/assets/zagonel-torneira.jpg.asset.json";
 import dewaltTrena from "@/assets/dewalt-trena.jpg.asset.json";
