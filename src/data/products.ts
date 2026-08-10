@@ -210,7 +210,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 12V MAX | Torque max : 26 Nm | Mandril : 10 mm | Vel. : 2 | Luz de Led : Sim | Bateria : 1,5 Ah inclusa | Peso : 1,1 Kg",
+      "Tensão : 12V MAX | Torque max : 24 Nm | Mandril : 10 mm | Vel. : 2 | Luz de Led : Sim | Bateria : 1,5 Ah inclusa | Peso : 1,1 Kg",
     image: dewalt12vMax.url,
   },
   {
