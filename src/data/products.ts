@@ -20,6 +20,16 @@ import nigroPanela from "@/assets/nigro-panela.png.asset.json";
 import zagonelTorneira from "@/assets/zagonel-torneira.jpg.asset.json";
 import dewaltTrena from "@/assets/dewalt-trena.jpg.asset.json";
 import dewaltCanivete from "@/assets/dewalt-canivete.jpg.asset.json";
+import dewaltDwht66719 from "@/assets/dewalt-dwht66719.png.asset.json";
+import dewaltDcf922 from "@/assets/dewalt-dcf922.png.asset.json";
+import dewaltSerraCircular from "@/assets/dewalt-serra-circular.png.asset.json";
+import dewaltDcb203 from "@/assets/dewalt-dcb203.png.asset.json";
+import dewaltDccs623b from "@/assets/dewalt-dccs623b.png.asset.json";
+import dewaltLanterna from "@/assets/dewalt-lanterna.png.asset.json";
+import dewalt12vMax from "@/assets/dewalt-12v-max.png.asset.json";
+import dewaltDcf894 from "@/assets/dewalt-dcf894.png.asset.json";
+import dewaltDcd796Xr from "@/assets/dewalt-dcd796-xr.png.asset.json";
+import dewaltDch263b from "@/assets/dewalt-dch263b.png.asset.json";
 import nigroEterna45 from "@/assets/nigro-eterna-45.png.asset.json";
 import nigroEterna60 from "@/assets/nigro-eterna-60.webp.asset.json";
 import jactoJ7Pro from "@/assets/jacto-j7-pro.jpg.asset.json";
@@ -126,6 +136,98 @@ export const PRODUCTS: Product[] = [
       "Canivete dobrável com lâmina em aço inox, abertura rápida com rolamento e cabo em alumínio.",
     image: dewaltCanivete.url,
   },
+  {
+    id: "dewalt-dwht66719",
+    name: "Parafusadeira Manual Tipo Chave de Fenda DWHT66719",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Parafusadeira manual com catraca e cabo emborrachado, ideal para apertos precisos em espaços reduzidos.",
+    image: dewaltDwht66719.url,
+  },
+  {
+    id: "dewalt-dcf922",
+    name: "Chave de Impacto 1/2\" 20V DCF922 Brushless com 2 Baterias",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Kit com duas baterias 20V 2.0Ah e carregador. Motor brushless compacto com alto torque para montagem e manutenção automotiva.",
+    image: dewaltDcf922.url,
+  },
+  {
+    id: "dewalt-serra-circular-20v",
+    name: "Serra Circular 20V XR Brushless 7.1/4\" 184mm",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Serra circular a bateria com disco de 184mm e 24 dentes, freio elétrico e base ajustável para cortes em madeira.",
+    image: dewaltSerraCircular.url,
+  },
+  {
+    id: "dewalt-dcb203",
+    name: "Bateria 20V MAX XR Lítio 2.0Ah DCB203",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Bateria compacta de íon-lítio 20V MAX com indicador de carga, compatível com toda a linha 20V da DeWalt.",
+    image: dewaltDcb203.url,
+  },
+  {
+    id: "dewalt-dccs623b",
+    name: "Eletroserra de Poda 20V DCCS623B 8\" Brushless",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Motosserra de poda a bateria com sabre de 8 polegadas, motor brushless, protetor e chave. Leve e ideal para jardinagem.",
+    image: dewaltDccs623b.url,
+  },
+  {
+    id: "dewalt-lanterna-18v",
+    name: "Lanterna LED a Bateria 18V/20V XR",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Lanterna de trabalho LED com cabeçote giratório e gancho de fixação. Alta luminosidade para oficinas e obras.",
+    image: dewaltLanterna.url,
+  },
+  {
+    id: "dewalt-12v-max",
+    name: "Parafusadeira / Furadeira 12V MAX com Bateria 1.5Ah",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Compacta e leve, com mandril de aperto rápido e embreagem ajustável. Perfeita para montagens e serviços leves.",
+    image: dewalt12vMax.url,
+  },
+  {
+    id: "dewalt-dcf894",
+    name: "Chave de Impacto 1/2\" 20V XR DCF894 Brushless",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Encaixe quadrado de 1/2\" com anel de retenção, três velocidades e motor brushless de alto torque para uso pesado.",
+    image: dewaltDcf894.url,
+  },
+  {
+    id: "dewalt-dcd796-xr-kit",
+    name: "Parafusadeira / Furadeira de Impacto 20V XR com Bateria",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Modelo XR brushless com mandril de 13mm, duas velocidades e função impacto. Acompanha bateria 20V MAX.",
+    image: dewaltDcd796Xr.url,
+  },
+  {
+    id: "dewalt-dch263b",
+    name: "Martelete Rotativo 3 Funções DCH263B SDS-Plus 20V",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Martelete a bateria com encaixe SDS-Plus e três funções (furar, furar com impacto e romper). Vendido sem bateria e carregador.",
+    image: dewaltDch263b.url,
+  },
+
+
 
   // Elgin
   {
