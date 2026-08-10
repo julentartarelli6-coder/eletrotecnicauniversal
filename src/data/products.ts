@@ -51,6 +51,10 @@ import lorenzettiDuchaHigienica from "@/assets/lorenzetti-ducha-higienica-3t.png
 import lorenzettiAdvancedHaste from "@/assets/lorenzetti-advanced-haste.png.asset.json";
 import lorenzettiLorenComfort from "@/assets/lorenzetti-loren-comfort.png.asset.json";
 import lorenzettiMaxiBanhoUltra from "@/assets/lorenzetti-maxi-banho-ultra.png.asset.json";
+import lorenzettiTradicao from "@/assets/lorenzetti-tradicao.png.asset.json";
+import lorenzettiAcquaStorm from "@/assets/lorenzetti-acqua-storm-branco-cromado.png.asset.json";
+import lorenzettiDuchaFashion from "@/assets/lorenzetti-ducha-fashion-branco.png.asset.json";
+import dewaltDcd1007Powerpack from "@/assets/dewalt-dcd1007-powerpack.png.asset.json";
 
 export type ProductCategory = "Ferramentas" | "Eletrodomésticos" | "Outros";
 
@@ -246,6 +250,15 @@ export const PRODUCTS: Product[] = [
     image: dewaltDcd1007_5ah.url,
   },
   {
+    id: "dewalt-dcd1007-powerpack",
+    name: "Parafusadeira / Furadeira de Impacto DCD1007 20V XR Powerpack",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Modelo XR brushless com mandril de 1/2\", três velocidades e embreagem de precisão. Versão Powerpack 220V.",
+    image: dewaltDcd1007Powerpack.url,
+  },
+  {
     id: "dewalt-dcd777-2ah",
     name: "Parafusadeira / Furadeira 20V MAX Brushless com Bateria 2Ah",
     brand: "DeWalt",
@@ -414,6 +427,33 @@ export const PRODUCTS: Product[] = [
     description:
       "Chuveiro com três posições (Inverno, Desliga e Verão), 4600W e jatos abundantes. Resistência de fácil substituição.",
     image: lorenzettiMaxiBanhoUltra.url,
+  },
+  {
+    id: "lorenzetti-tradicao",
+    name: "Chuveiro Tradição 220V 5700W Cromado",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Chuveiro e ducha com acabamento cromado, três temperaturas (Quente, Morno e Super Quente) e 5700W. Design clássico e resistente.",
+    image: lorenzettiTradicao.url,
+  },
+  {
+    id: "lorenzetti-acqua-storm",
+    name: "Chuveiro Acqua Storm Ultra Branco/Cromado",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Ducha de teto com espalhador retangular tipo chuva, controle eletrônico de temperatura e acabamento branco com cromado.",
+    image: lorenzettiAcquaStorm.url,
+  },
+  {
+    id: "lorenzetti-ducha-fashion",
+    name: "Ducha Fashion 220V 7500W Branca",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Ducha com quatro temperaturas, 7500W e espalhador amplo em ABS branco. Resistência de fácil troca.",
+    image: lorenzettiDuchaFashion.url,
   },
 
   // Makita
