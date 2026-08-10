@@ -138,7 +138,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "dewalt-dwht66719",
-    name: "Parafusadeira Manual Tipo Chave de Fenda DWHT66719",
+    name: "Parafusadeira\u00a0 Manual\u00a0 Tipo\u00a0 Chave de Fenda DWHT66719",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
@@ -147,7 +147,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "dewalt-dcf922",
-    name: "Chave de Impacto 1/2\" 20V DCF922 Brushless com 2 Baterias",
+    name: "Chave de Impacto 1/2\" 20V DCF922 Brushless\u00a0",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
@@ -183,7 +183,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "dewalt-lanterna-18v",
-    name: "Lanterna LED a Bateria 18V/20V XR",
+    name: "Lanterna LED a Bateria 20V XR Power Stack",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
@@ -201,7 +201,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "dewalt-dcf894",
-    name: "Chave de Impacto 1/2\" 20V XR DCF894 Brushless",
+    name: "Chave de Impacto 1/2\" 20V | 4 Ah XR DCF894 Brushless",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
@@ -210,7 +210,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "dewalt-dcd796-xr-kit",
-    name: "Parafusadeira / Furadeira de Impacto 20V XR com Bateria",
+    name: "Parafusadeira / Furadeira de Impacto 20V | 2 Ah XR com Bateria",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
