@@ -51,6 +51,10 @@ import lorenzettiDuchaHigienica from "@/assets/lorenzetti-ducha-higienica-3t.png
 import lorenzettiAdvancedHaste from "@/assets/lorenzetti-advanced-haste.png.asset.json";
 import lorenzettiLorenComfort from "@/assets/lorenzetti-loren-comfort.png.asset.json";
 import lorenzettiMaxiBanhoUltra from "@/assets/lorenzetti-maxi-banho-ultra.png.asset.json";
+import lorenzettiTradicao from "@/assets/lorenzetti-tradicao.png.asset.json";
+import lorenzettiAcquaStorm from "@/assets/lorenzetti-acqua-storm-branco-cromado.png.asset.json";
+import lorenzettiDuchaFashion from "@/assets/lorenzetti-ducha-fashion-branco.png.asset.json";
+import dewaltDcd1007Powerpack from "@/assets/dewalt-dcd1007-powerpack.png.asset.json";
 
 export type ProductCategory = "Ferramentas" | "Eletrodomésticos" | "Outros";
 
