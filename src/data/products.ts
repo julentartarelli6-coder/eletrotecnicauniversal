@@ -419,6 +419,33 @@ export const PRODUCTS: Product[] = [
       "Chuveiro com três posições (Inverno, Desliga e Verão), 4600W e jatos abundantes. Resistência de fácil substituição.",
     image: lorenzettiMaxiBanhoUltra.url,
   },
+  {
+    id: "lorenzetti-tradicao",
+    name: "Chuveiro Tradição 220V 5700W Cromado",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Chuveiro e ducha com acabamento cromado, três temperaturas (Quente, Morno e Super Quente) e 5700W. Design clássico e resistente.",
+    image: lorenzettiTradicao.url,
+  },
+  {
+    id: "lorenzetti-acqua-storm",
+    name: "Chuveiro Acqua Storm Ultra Branco/Cromado",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Ducha de teto com espalhador retangular tipo chuva, controle eletrônico de temperatura e acabamento branco com cromado.",
+    image: lorenzettiAcquaStorm.url,
+  },
+  {
+    id: "lorenzetti-ducha-fashion",
+    name: "Ducha Fashion 220V 7500W Branca",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Ducha com quatro temperaturas, 7500W e espalhador amplo em ABS branco. Resistência de fácil troca.",
+    image: lorenzettiDuchaFashion.url,
+  },
 
   // Makita
   {
