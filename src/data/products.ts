@@ -274,7 +274,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "dewalt-drywall-xr",
-    name: "Parafusadeira Drywall 20V XR com Bateria 4Ah",
+    name: "Parafusadeira Drywall 20V XR com Bateria 5Ah",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
