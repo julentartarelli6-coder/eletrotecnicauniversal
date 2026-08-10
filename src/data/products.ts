@@ -41,6 +41,16 @@ import lorenzettiLorenEasy from "@/assets/lorenzetti-loren-easy.png.asset.json";
 import roaFogaoIndustrial from "@/assets/roa-fogao-industrial.png.asset.json";
 import vithoryEspremedor from "@/assets/vithory-espremedor.png.asset.json";
 import vithoryLiquidificador from "@/assets/vithory-liquidificador.png.asset.json";
+import dewaltDcd1007_5ah from "@/assets/dewalt-dcd1007-5ah.png.asset.json";
+import dewaltDcd777 from "@/assets/dewalt-dcd777-2ah.png.asset.json";
+import dewaltDcf512b from "@/assets/dewalt-dcf512b.png.asset.json";
+import dewaltFuradeiraFio from "@/assets/dewalt-furadeira-fio.png.asset.json";
+import dewaltDrywall from "@/assets/dewalt-drywall-xr.png.asset.json";
+import lorenzettiAquecedorVersatil from "@/assets/lorenzetti-aquecedor-versatil.png.asset.json";
+import lorenzettiDuchaHigienica from "@/assets/lorenzetti-ducha-higienica-3t.png.asset.json";
+import lorenzettiAdvancedHaste from "@/assets/lorenzetti-advanced-haste.png.asset.json";
+import lorenzettiLorenComfort from "@/assets/lorenzetti-loren-comfort.png.asset.json";
+import lorenzettiMaxiBanhoUltra from "@/assets/lorenzetti-maxi-banho-ultra.png.asset.json";
 
 export type ProductCategory = "Ferramentas" | "Eletrodomésticos" | "Outros";
 
