@@ -370,6 +370,51 @@ export const PRODUCTS: Product[] = [
       "Torneira elétrica branca de parede com bica alta giratória e três temperaturas de aquecimento.",
     image: lorenzettiLorenEasy.url,
   },
+  {
+    id: "lorenzetti-aquecedor-versatil",
+    name: "Aquecedor Versátil Lorenzetti",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Aquecedor de água compacto para torneiras e duchas, com controle de temperatura e instalação versátil em parede.",
+    image: lorenzettiAquecedorVersatil.url,
+  },
+  {
+    id: "lorenzetti-ducha-higienica-3t",
+    name: "Ducha Higiênica 3T",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Ducha higiênica com aquecimento elétrico de 3 temperaturas, gatilho ergonômico e mangueira flexível cromada.",
+    image: lorenzettiDuchaHigienica.url,
+  },
+  {
+    id: "lorenzetti-advanced-eletronica",
+    name: "Chuveiro Advanced Eletrônica com Haste",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Chuveiro eletrônico com haste, espalhador amplo e ajuste contínuo de temperatura para banhos confortáveis.",
+    image: lorenzettiAdvancedHaste.url,
+  },
+  {
+    id: "lorenzetti-loren-comfort",
+    name: "Chuveiro Loren Comfort Eletrônico",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Modelo eletrônico com haste e espalhador redondo de grande diâmetro, proporcionando jatos suaves e temperatura ajustável.",
+    image: lorenzettiLorenComfort.url,
+  },
+  {
+    id: "lorenzetti-maxi-banho-ultra",
+    name: "Chuveiro Maxi Banho Ultra 127V 4600W",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Chuveiro com três posições (Inverno, Desliga e Verão), 4600W e jatos abundantes. Resistência de fácil substituição.",
+    image: lorenzettiMaxiBanhoUltra.url,
+  },
 
   // Makita
   {
