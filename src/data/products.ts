@@ -228,7 +228,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX | Torque max : 70 Nm | Pos. Torque: 15| Mandril : 13 mm | Vel. : 2 | Impacto : Sim | Bateria : 2,0 Ah inclusa | Luz de Led : Sim | Peso : 1,3Kg | Max. Madeira : 40mm | Max. aço : 13mm",
+      "Tensão : 20V MAX | Torque max : 70 Nm | Pos. Torque: 15| Mandril : 13 mm - Aperto rápido | Vel. : 2 | Vel. sem carga : 0-550 \\ 0-2000 RPM | Impacto : Sim | Bateria : 2,0 Ah inclusa | Luz de Led : Sim | Peso : 1,3Kg | Max. Madeira : 40mm | Max. aço : 13mm | Opções :DCD791D2-B2 (220V) DCD791D2-BR (127V) | Acompanha : Manual , 2 baterias 20V MAX - 2Ah , carregador e maleta de transporte | Embalagem : Maleta Plástica .",
     image: dewaltDcd796Xr.url,
   },
   {
