@@ -236,6 +236,51 @@ export const PRODUCTS: Product[] = [
       "Martelete a bateria com encaixe SDS-Plus e três funções (furar, furar com impacto e romper). Vendido sem bateria e carregador.",
     image: dewaltDch263b.url,
   },
+  {
+    id: "dewalt-dcd1007-5ah",
+    name: "Furadeira / Parafusadeira de Impacto 20V XR 1/2\" com Bateria 5Ah",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Modelo XR de alta performance com mandril de 1/2\", punho lateral e três velocidades. Acompanha bateria 20V MAX 5.0Ah e carregador.",
+    image: dewaltDcd1007_5ah.url,
+  },
+  {
+    id: "dewalt-dcd777-2ah",
+    name: "Parafusadeira / Furadeira 20V MAX Brushless com Bateria 2Ah",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Motor brushless, mandril de aperto rápido de 13mm e embreagem de 15 posições. Leve e equilibrada para o uso diário.",
+    image: dewaltDcd777.url,
+  },
+  {
+    id: "dewalt-dcf512b",
+    name: "Chave Catraca 1/2\" 20V DCF512B Brushless",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Catraca a bateria com encaixe de 1/2\", cabeça compacta para espaços reduzidos e motor brushless. Ideal para mecânica automotiva.",
+    image: dewaltDcf512b.url,
+  },
+  {
+    id: "dewalt-furadeira-fio-13mm",
+    name: "Furadeira com Fio 1/2\" 13mm com Punho Lateral",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Furadeira elétrica robusta com mandril de coroa 13mm, velocidade variável, reversão e punho auxiliar para maior controle.",
+    image: dewaltFuradeiraFio.url,
+  },
+  {
+    id: "dewalt-drywall-xr",
+    name: "Parafusadeira Drywall 20V XR com Bateria 4Ah",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Parafusadeira para gesso acartonado com bico limitador de profundidade, motor brushless e alta autonomia. Acompanha bateria XR.",
+    image: dewaltDrywall.url,
+  },
 
 
 
