@@ -250,6 +250,15 @@ export const PRODUCTS: Product[] = [
     image: dewaltDcd1007_5ah.url,
   },
   {
+    id: "dewalt-dcd1007-powerpack",
+    name: "Parafusadeira / Furadeira de Impacto DCD1007 20V XR Powerpack",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Modelo XR brushless com mandril de 1/2\", três velocidades e embreagem de precisão. Versão Powerpack 220V.",
+    image: dewaltDcd1007Powerpack.url,
+  },
+  {
     id: "dewalt-dcd777-2ah",
     name: "Parafusadeira / Furadeira 20V MAX Brushless com Bateria 2Ah",
     brand: "DeWalt",
