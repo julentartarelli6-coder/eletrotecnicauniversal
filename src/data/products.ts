@@ -82,7 +82,7 @@ export const PRODUCTS: Product[] = [
     brand: "Bosch",
     category: "Ferramentas",
     description:
-      "Tensão : 3,6V | Torque max : 4,5 Nm | Rotação : 360 rpm | Mandril : 1/4\" hexagonal | Peso : 0,3 Kg | Acessórios : 2 pontas, cabo USB e maleta",
+      "Tensão : 3,6V (bateria interna de lítio) | Torque max : 4,5 Nm | Pos. de torque : 5 + modo direto | Vel. sem carga : 360 RPM | Encaixe : 1/4\" hexagonal | Acionamento : Push & Go automático | Luz de Led : Sim | Peso : 0,3 Kg | Carga : Cabo micro USB (~3 h) | Acompanha : 33 pontas, cabo USB, manual e maleta | Embalagem : Maleta plástica | Uso : Montagem de móveis e reparos domésticos",
     image: boschGo.url,
   },
 
@@ -93,7 +93,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V XR | Torque max : 205 Nm | Encaixe : 1/2\" | Motor : Brushless | Vel. : 3 | Bateria : Íon-lítio inclusa",
+      "Tensão : 20V MAX XR | Torque max : 205 Nm | Encaixe : 1/2\" com pino de retenção | Motor : Brushless | Vel. : 3 + modo precision wrench | Vel. sem carga : 0-900 \\ 0-2.000 \\ 0-3.250 RPM | Impactos : até 3.600 IPM | Luz de Led : Sim (3 pontos) | Peso : 1,6 Kg | Bateria : Íon-lítio 20V inclusa | Acompanha : Manual, bateria, carregador e maleta | Uso : Mecânica automotiva e montagem industrial",
     image: p1.url,
   },
   {
@@ -102,7 +102,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 18V/20V XR | Torque max : 70 Nm | Mandril : 13 mm | Motor : Brushless | Vel. : 2 | Impactos : 34.000 ipm",
+      "Tensão : 20V MAX XR | Torque max : 70 Nm | Pos. de torque : 15 + furar/impacto | Mandril : 13 mm de aperto rápido | Motor : Brushless | Vel. : 2 | Vel. sem carga : 0-550 \\ 0-2.000 RPM | Impactos : até 34.000 IPM | Máx. madeira : 40 mm | Máx. aço : 13 mm | Máx. alvenaria : 13 mm | Luz de Led : Sim | Peso : 1,6 Kg | Acompanha : Manual, punho lateral e maleta",
     image: p2.url,
   },
   {
@@ -111,7 +111,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX XR | Vel. : 3 | Impactos : 2.250 BPM | Mandril : 13 mm | Motor : Brushless | Luz de Led : Sim",
+      "Tensão : 20V MAX XR | Torque max : 90 Nm | Mandril : 13 mm de aperto rápido | Motor : Brushless | Vel. : 3 | Vel. sem carga : 0-450 \\ 0-1.300 \\ 0-2.000 RPM | Impactos : até 38.250 BPM | Máx. madeira : 40 mm | Máx. aço : 13 mm | Máx. alvenaria : 16 mm | Luz de Led : Sim | Punho lateral : Sim | Peso : 1,8 Kg | Uso : Furação pesada em concreto e metal",
     image: p3.url,
   },
   {
@@ -120,7 +120,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Potência : 2.200W | Disco : 7\" (180 mm) | Rotação : 8.500 rpm | Tensão : 220V | Punho lateral : Sim | Proteção de disco : Sim",
+      "Potência : 2.200W | Tensão : 220V | Disco : 7\" (180 mm) | Rosca do eixo : M14 | Vel. sem carga : 8.500 RPM | Partida suave : Sim | Proteção contra rearme : Sim | Punho lateral : 3 posições | Protetor de disco : Ajuste sem ferramenta | Peso : 5,3 Kg | Acompanha : Punho lateral, chave e protetor | Uso : Corte e desbaste em obra",
     image: dewaltEsmerilhadeira.url,
   },
   {
@@ -129,7 +129,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tipo : Com fio | Vazão de ar : Regulável | Uso : Limpeza de oficinas e máquinas | Bico direcionador : Sim | Peso : Leve e compacto",
+      "Tipo : Com fio | Tensão : 220V | Potência : 530W | Vazão de ar : até 2,3 m³/min | Velocidade do ar : até 90 m/s | Vel. variável : Sim | Bico direcionador : Removível | Peso : 1,6 Kg | Acompanha : Bico soprador e manual | Uso : Limpeza de oficinas, máquinas e bancadas",
     image: dewaltSoprador.url,
   },
   {
@@ -138,7 +138,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Comprimento : 8 m | Largura da fita : 26 mm | Trava : Sim | Clipe de cinto : Sim | Corpo : Emborrachado | Uso : Obra e marcenaria",
+      "Comprimento : 8 m | Largura da fita : 26 mm | Alcance sem apoio : até 2,8 m | Trava : Sim | Gancho : Reforçado e magnético | Corpo : Emborrachado antiqueda | Clipe de cinto : Sim | Graduação : Métrica e em polegadas | Peso : 0,4 Kg | Uso : Obra, marcenaria e instalação",
     image: dewaltTrena.url,
   },
   {
@@ -147,7 +147,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Lâmina : Aço inox | Abertura : Rápida com rolamento | Cabo : Alumínio | Trava de segurança : Sim | Clipe de bolso : Sim",
+      "Lâmina : Aço inox 3\" | Abertura : Rápida assistida (Quick Flip) | Cabo : Alumínio com pegada emborrachada | Trava de segurança : Sim | Clipe de bolso : Reversível | Peso : 0,12 Kg | Uso : Corte de fitas, cabos e uso geral em obra",
     image: dewaltCanivete.url,
   },
   {
@@ -156,7 +156,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tipo : Manual com catraca | Encaixe : 1/4\" | Posições da catraca : 3 (frente, trava e reverso) | Cabo : Emborrachado | Uso : Apertos precisos",
+      "Tipo : Manual com catraca | Encaixe : 1/4\" hexagonal | Posições da catraca : 3 (frente, trava e reverso) | Torque : Manual de alta precisão | Cabo : Emborrachado bimaterial | Armazenamento : Compartimento de pontas no cabo | Peso : 0,3 Kg | Uso : Apertos precisos em eletrônicos, móveis e elétrica",
     image: dewaltDwht66719.url,
   },
   {
@@ -165,7 +165,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX | Torque max : 406 Nm | Encaixe : 1/2\" | Motor : Brushless | Vel. : 3 | Baterias : 2 x 2,0 Ah + carregador",
+      "Tensão : 20V MAX | Torque max : 406 Nm | Torque de rompimento : até 610 Nm | Encaixe : 1/2\" com anel de retenção | Motor : Brushless | Vel. : 3 | Vel. sem carga : 0-900 \\ 0-1.900 \\ 0-2.400 RPM | Impactos : até 3.400 IPM | Luz de Led : Sim | Peso : 1,5 Kg | Acompanha : 2 baterias 2,0 Ah, carregador e maleta | Embalagem : Maleta plástica",
     image: dewaltDcf922.url,
   },
   {
@@ -174,7 +174,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V XR | Disco : 184 mm (7.1/4\") | Dentes : 24 | Rotação : 5.800 rpm | Motor : Brushless | Freio elétrico : Sim | Base ajustável : Sim",
+      "Tensão : 20V MAX XR | Disco : 184 mm (7.1/4\") com 24 dentes | Furo do disco : 20 mm | Vel. sem carga : 5.800 RPM | Motor : Brushless | Prof. de corte a 90° : 65 mm | Prof. de corte a 45° : 49 mm | Base : Alumínio com ajuste de ângulo 0-57° | Freio elétrico : Sim | Saída de pó : Sim | Peso : 3,4 Kg | Bateria : Consulte versão",
     image: dewaltSerraCircular.url,
   },
   {
@@ -183,7 +183,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX XR | Capacidade : 2,0 Ah | Tecnologia : Íon-lítio | Indicador de carga : Sim | Compatibilidade : Toda a linha 20V",
+      "Tensão : 20V MAX XR | Capacidade : 2,0 Ah | Tecnologia : Íon-lítio | Energia : 40 Wh | Indicador de carga : 3 Leds | Tempo de carga : ~30 min (carregador rápido) | Peso : 0,4 Kg | Sem efeito memória : Sim | Compatibilidade : Toda a linha 20V MAX DeWalt",
     image: dewaltDcb203.url,
   },
   {
@@ -192,7 +192,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX | Sabre : 8\" (20 cm) | Motor : Brushless | Lubrificação : Automática | Peso : 3,4 Kg | Bateria : Não inclusa",
+      "Tensão : 20V MAX | Sabre : 8\" (20 cm) | Motor : Brushless | Vel. da corrente : 7,6 m/s | Tensionamento : Sem ferramentas | Lubrificação : Automática com reservatório | Capacidade de corte : até 15 cm de diâmetro | Peso : 3,4 Kg | Bateria : Não inclusa (vendida separadamente) | Uso : Poda de galhos e jardinagem",
     image: dewaltDccs623b.url,
   },
   {
@@ -201,7 +201,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V XR / Power Stack | Luminosidade : Até 1.000 lumens | Cabeçote giratório : Sim | Gancho de fixação : Sim | Bateria : Não inclusa",
+      "Tensão : 20V MAX XR / Power Stack | Luminosidade : até 1.000 lumens | Modos : 3 níveis de intensidade | Autonomia : até 30 h (modo econômico) | Cabeçote : Giratório 360° | Gancho de fixação : Sim | Corpo : Alumínio resistente a impacto | Peso : 0,7 Kg | Bateria : Não inclusa",
     image: dewaltLanterna.url,
   },
   {
@@ -210,7 +210,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 12V MAX | Torque max : 24 Nm | Mandril : 10 mm | Vel. : 2 | Luz de Led : Sim | Bateria : 1,5 Ah inclusa | Peso : 1,1 Kg",
+      "Tensão : 12V MAX | Torque max : 24 Nm | Pos. de torque : 15 + furar | Mandril : 10 mm de aperto rápido | Vel. : 2 | Vel. sem carga : 0-400 \\ 0-1.500 RPM | Máx. madeira : 25 mm | Máx. aço : 10 mm | Luz de Led : Sim | Peso : 1,1 Kg | Acompanha : Bateria 1,5 Ah, carregador e maleta | Uso : Montagem e reparos leves",
     image: dewalt12vMax.url,
   },
   {
@@ -219,7 +219,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V XR | Torque max : 447 Nm | Encaixe : 1/2\" com anel | Motor : Brushless | Vel. : 3 | Bateria : 4,0 Ah",
+      "Tensão : 20V MAX XR | Torque max : 447 Nm | Torque de rompimento : até 610 Nm | Encaixe : 1/2\" com anel de retenção | Motor : Brushless | Vel. : 3 + modo precision wrench | Vel. sem carga : 0-900 \\ 0-2.000 \\ 0-3.250 RPM | Impactos : até 3.600 IPM | Luz de Led : Sim | Peso : 1,7 Kg | Bateria : 4,0 Ah | Uso : Rodas, chassis e manutenção pesada",
     image: dewaltDcf894.url,
   },
   {
@@ -237,7 +237,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX | Encaixe : SDS-Plus | Funções : 3 (furar, impacto e romper) | Energia de impacto : 2,6 J | Bateria : Não inclusa",
+      "Tensão : 20V MAX | Encaixe : SDS-Plus | Funções : 3 (furar, furar com impacto e romper) | Energia de impacto : 2,6 J | Vel. sem carga : 0-1.100 RPM | Impactos : até 4.600 BPM | Máx. concreto : 26 mm | Controle de vibração : Sim | Embreagem de segurança : Sim | Punho lateral : 360° | Peso : 3,0 Kg | Bateria : Não inclusa",
     image: dewaltDch263b.url,
   },
   {
@@ -246,7 +246,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX XR | Mandril : 13 mm (1/2\") | Vel. : 3 | Impacto : Sim | Punho lateral : Sim | Bateria : 5,0 Ah + carregador",
+      "Tensão : 20V MAX XR | Torque max : 90 Nm | Mandril : 13 mm (1/2\") de aperto rápido | Motor : Brushless | Vel. : 3 | Vel. sem carga : 0-450 \\ 0-1.300 \\ 0-2.000 RPM | Impacto : Sim | Máx. madeira : 40 mm | Máx. aço : 13 mm | Máx. alvenaria : 16 mm | Punho lateral : Sim | Luz de Led : Sim | Peso : 1,9 Kg | Acompanha : Bateria 5,0 Ah, carregador e maleta",
     image: dewaltDcd1007_5ah.url,
   },
   {
@@ -255,7 +255,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V XR | Mandril : 13 mm (1/2\") | Vel. : 3 | Motor : Brushless | Embreagem : Precisão | Carregador : 220V | Versão : Powerpack",
+      "Tensão : 20V MAX XR | Torque max : 90 Nm | Mandril : 13 mm (1/2\") de aperto rápido | Motor : Brushless | Vel. : 3 | Vel. sem carga : 0-450 \\ 0-1.300 \\ 0-2.000 RPM | Impacto : Sim | Máx. madeira : 40 mm | Máx. aço : 13 mm | Máx. alvenaria : 16 mm | Luz de Led : Sim | Peso : 1,9 Kg | Carregador : 220V | Versão : Powerpack (bateria Power Stack)",
     image: dewaltDcd1007Powerpack.url,
   },
   {
@@ -273,7 +273,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX | Torque max : 81 Nm | Encaixe : 1/2\" | Rotação : 250 rpm | Motor : Brushless | Bateria : Não inclusa | Uso : Mecânica automotiva",
+      "Tensão : 20V MAX | Torque max : 81 Nm | Encaixe : 1/2\" | Vel. sem carga : 250 RPM | Motor : Brushless | Reversão : Sim | Luz de Led : Sim | Comprimento : 28 cm (acesso a locais estreitos) | Peso : 1,3 Kg | Bateria : Não inclusa | Uso : Mecânica automotiva e manutenção industrial",
     image: dewaltDcf512b.url,
   },
   {
@@ -282,7 +282,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tipo : Com fio | Mandril : 13 mm (1/2\") de coroa | Vel. variável : Sim | Reversão : Sim | Punho lateral : Sim | Uso : Obra e marcenaria",
+      "Tipo : Com fio | Tensão : 220V | Potência : 710W | Mandril : 13 mm (1/2\") de coroa com chave | Vel. sem carga : 0-2.800 RPM | Vel. variável : Sim (gatilho) | Reversão : Sim | Máx. madeira : 25 mm | Máx. aço : 13 mm | Punho lateral : 360° | Cabo : 2 m | Peso : 2,2 Kg",
     image: dewaltFuradeiraFio.url,
   },
   {
@@ -291,7 +291,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V XR | Rotação : 4.400 rpm | Motor : Brushless | Bico limitador de profundidade : Sim | Bateria : 5,0 Ah | Uso : Gesso acartonado",
+      "Tensão : 20V MAX XR | Vel. sem carga : 0-4.400 RPM | Motor : Brushless | Encaixe : 1/4\" hexagonal | Embreagem : Silenciosa com desligamento automático | Bico limitador de profundidade : Ajustável e removível | Reversão : Sim | Luz de Led : Sim | Gancho de cinto : Sim | Peso : 1,5 Kg | Acompanha : Bateria 5,0 Ah, carregador e maleta | Uso : Gesso acartonado e steel frame",
     image: dewaltDrywall.url,
   },
 
@@ -315,7 +315,7 @@ export const PRODUCTS: Product[] = [
     brand: "Jacto",
     category: "Ferramentas",
     description:
-      "Pressão : 1.600 psi | Vazão : 380 L/h | Potência : 1.500W | Mangueira : 5 m | Carrinho : Sim | Uso : Veículos, calçadas e fachadas",
+      "Pressão : 1.600 psi | Vazão : 380 L/h | Potência : 1.500W | Tensão : 127V ou 220V | Motor : Universal com bomba de 3 pistões | Mangueira : 5 m | Bico : Regulável (leque e concentrado) | Reservatório de detergente : Sim | Carrinho : Sim com alça retrátil | Peso : 8 Kg | Uso : Veículos, calçadas e fachadas",
     image: jactoJ7000.url,
   },
   {
@@ -324,7 +324,7 @@ export const PRODUCTS: Product[] = [
     brand: "Jacto",
     category: "Ferramentas",
     description:
-      "Pressão : 1.800 psi | Vazão : 400 L/h | Potência : 1.600W | Enrolador de mangueira : Sim | Uso : Doméstico e profissional",
+      "Pressão : 1.800 psi | Vazão : 400 L/h | Potência : 1.600W | Tensão : 127V ou 220V | Mangueira : 5 m com enrolador | Stop Total : Sim | Bico : Regulável | Aplicador de detergente : Sim | Filtro de entrada : Sim | Peso : 9 Kg | Uso : Doméstico e profissional leve",
     image: jactoJ6800.url,
   },
   {
@@ -333,7 +333,7 @@ export const PRODUCTS: Product[] = [
     brand: "Jacto",
     category: "Ferramentas",
     description:
-      "Pressão : 2.000 psi | Vazão : 420 L/h | Stop Total : Sim | Mangueira : Reforçada 6 m | Uso : Limpeza pesada",
+      "Pressão : 2.000 psi | Vazão : 420 L/h | Potência : 1.800W | Tensão : 127V ou 220V | Mangueira : Reforçada 6 m | Stop Total : Sim | Bico : Turbo + regulável | Reservatório de detergente : Sim | Enrolador de mangueira : Sim | Peso : 10 Kg | Uso : Limpeza pesada e uso frequente",
     image: jactoJ7000Plus.url,
   },
   {
@@ -342,7 +342,7 @@ export const PRODUCTS: Product[] = [
     brand: "Jacto",
     category: "Ferramentas",
     description:
-      "Pressão : 2.200 psi | Vazão : 450 L/h | Stop Total : Sim | Carrinho de transporte : Sim | Pistola : Ergonômica | Uso : Profissional intenso",
+      "Pressão : 2.200 psi | Vazão : 450 L/h | Potência : 2.000W | Tensão : 127V ou 220V | Mangueira : Reforçada 8 m | Stop Total : Sim | Pistola : Ergonômica com trava | Bicos : Turbo e leque regulável | Carrinho : Com rodas e alça | Peso : 12 Kg | Uso : Profissional intenso",
     image: jactoJ7Pro.url,
   },
 
@@ -463,7 +463,7 @@ export const PRODUCTS: Product[] = [
     brand: "Makita",
     category: "Ferramentas",
     description:
-      "Potência : 2.200W | Disco : 7\" (180 mm) | Rotação : 8.500 rpm | Tensão : 220V | Punho lateral : Sim | Proteção de disco : Sim",
+      "Potência : 2.200W | Tensão : 220V | Disco : 7\" (180 mm) | Rosca do eixo : M14 | Vel. sem carga : 8.500 RPM | Partida suave : Sim | Trava do eixo : Sim | Punho lateral : 3 posições | Protetor de disco : Ajustável | Cabo : 2,5 m | Peso : 5,1 Kg | Uso : Corte e desbaste em metal e concreto",
     image: p4.url,
   },
   {
@@ -472,7 +472,7 @@ export const PRODUCTS: Product[] = [
     brand: "Makita",
     category: "Ferramentas",
     description:
-      "Tipo : Com fio | Mandril : 13 mm (1/2\") de coroa | Impacto : Sim | Vel. variável : Sim | Reversão : Sim | Punho auxiliar : Sim",
+      "Tipo : Com fio | Tensão : 220V | Potência : 710W | Mandril : 13 mm (1/2\") de coroa | Vel. sem carga : 0-2.800 RPM | Impactos : até 44.800 BPM | Vel. variável : Sim | Reversão : Sim | Máx. madeira : 25 mm | Máx. aço : 13 mm | Máx. alvenaria : 16 mm | Punho auxiliar : 360° com limitador | Peso : 2,1 Kg",
     image: p5.url,
   },
   {
@@ -481,7 +481,7 @@ export const PRODUCTS: Product[] = [
     brand: "Makita",
     category: "Ferramentas",
     description:
-      "Potência : 1.200W | Disco : 110 mm | Rotação : 13.000 rpm | Tensão : 220V | Disco diamantado : Incluso | Uso : Porcelanato, mármore e granito",
+      "Potência : 1.200W | Tensão : 220V | Disco : 110 mm | Furo do disco : 20 mm | Vel. sem carga : 13.000 RPM | Prof. de corte : 34 mm | Base : Alumínio com ajuste de profundidade | Refrigeração : Saída para água | Disco diamantado : Incluso | Cabo : 2,5 m | Peso : 3,1 Kg | Uso : Porcelanato, mármore e granito",
     image: p6.url,
   },
   {
@@ -490,7 +490,7 @@ export const PRODUCTS: Product[] = [
     brand: "Makita",
     category: "Ferramentas",
     description:
-      "Tensão : 18V LXT | Vazão de ar : 2,6 m³/min | Vel. : 3 | Bateria : 3,0 Ah + carregador | Peso : 1,7 Kg | Uso : Pátios e oficinas",
+      "Tensão : 18V LXT | Vazão de ar : 2,6 m³/min | Velocidade do ar : até 54 m/s | Vel. : 3 | Autonomia : até 40 min (3,0 Ah) | Bico : Removível | Peso : 1,7 Kg (com bateria) | Acompanha : Bateria 3,0 Ah, carregador e bico | Uso : Pátios, jardins e oficinas",
     image: makitaSoprador.url,
   },
   {
@@ -499,7 +499,7 @@ export const PRODUCTS: Product[] = [
     brand: "Makita",
     category: "Ferramentas",
     description:
-      "Tipo : Elétrico com fio | Encaixe : SDS | Impacto : Alto para demolição | Punho auxiliar : Sim | Maleta : Inclusa | Uso : Concreto e alvenaria",
+      "Tipo : Elétrico com fio | Tensão : 220V | Potência : 1.500W | Encaixe : SDS | Energia de impacto : 20 J | Impactos : até 1.900 BPM | Controle de vibração : Sim | Punho auxiliar : Ajustável 360° | Acompanha : Ponteiro, talhadeira, graxa e maleta | Peso : 10 Kg | Uso : Demolição de concreto e alvenaria",
     image: makitaRompedor.url,
   },
   {
@@ -508,7 +508,7 @@ export const PRODUCTS: Product[] = [
     brand: "Makita",
     category: "Ferramentas",
     description:
-      "Potência : 530W | Tensão : 220V | Vazão de ar : 2,3 m³/min | Bico direcionador : Removível | Peso : 1,5 Kg | Uso : Bancadas e máquinas",
+      "Potência : 530W | Tensão : 220V | Vazão de ar : 2,3 m³/min | Velocidade do ar : até 90 m/s | Vel. variável : Sim | Bico direcionador : Removível | Cabo : 2 m | Peso : 1,5 Kg | Uso : Limpeza de bancadas, máquinas e painéis elétricos",
     image: makitaM4000g.url,
   },
 
