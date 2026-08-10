@@ -300,7 +300,7 @@ export const PRODUCTS: Product[] = [
   // Elgin
   {
     id: "elgin-split",
-    name: "Ar-condicionado Split Inverter R32",
+    name: "Ar-condicionado Elgin Split Inverter R32",
     brand: "Elgin",
     category: "Eletrodomésticos",
     description:
