@@ -41,6 +41,16 @@ import lorenzettiLorenEasy from "@/assets/lorenzetti-loren-easy.png.asset.json";
 import roaFogaoIndustrial from "@/assets/roa-fogao-industrial.png.asset.json";
 import vithoryEspremedor from "@/assets/vithory-espremedor.png.asset.json";
 import vithoryLiquidificador from "@/assets/vithory-liquidificador.png.asset.json";
+import dewaltDcd1007_5ah from "@/assets/dewalt-dcd1007-5ah.png.asset.json";
+import dewaltDcd777 from "@/assets/dewalt-dcd777-2ah.png.asset.json";
+import dewaltDcf512b from "@/assets/dewalt-dcf512b.png.asset.json";
+import dewaltFuradeiraFio from "@/assets/dewalt-furadeira-fio.png.asset.json";
+import dewaltDrywall from "@/assets/dewalt-drywall-xr.png.asset.json";
+import lorenzettiAquecedorVersatil from "@/assets/lorenzetti-aquecedor-versatil.png.asset.json";
+import lorenzettiDuchaHigienica from "@/assets/lorenzetti-ducha-higienica-3t.png.asset.json";
+import lorenzettiAdvancedHaste from "@/assets/lorenzetti-advanced-haste.png.asset.json";
+import lorenzettiLorenComfort from "@/assets/lorenzetti-loren-comfort.png.asset.json";
+import lorenzettiMaxiBanhoUltra from "@/assets/lorenzetti-maxi-banho-ultra.png.asset.json";
 
 export type ProductCategory = "Ferramentas" | "Eletrodomésticos" | "Outros";
 
@@ -226,6 +236,51 @@ export const PRODUCTS: Product[] = [
       "Martelete a bateria com encaixe SDS-Plus e três funções (furar, furar com impacto e romper). Vendido sem bateria e carregador.",
     image: dewaltDch263b.url,
   },
+  {
+    id: "dewalt-dcd1007-5ah",
+    name: "Furadeira / Parafusadeira de Impacto 20V XR 1/2\" com Bateria 5Ah",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Modelo XR de alta performance com mandril de 1/2\", punho lateral e três velocidades. Acompanha bateria 20V MAX 5.0Ah e carregador.",
+    image: dewaltDcd1007_5ah.url,
+  },
+  {
+    id: "dewalt-dcd777-2ah",
+    name: "Parafusadeira / Furadeira 20V MAX Brushless com Bateria 2Ah",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Motor brushless, mandril de aperto rápido de 13mm e embreagem de 15 posições. Leve e equilibrada para o uso diário.",
+    image: dewaltDcd777.url,
+  },
+  {
+    id: "dewalt-dcf512b",
+    name: "Chave Catraca 1/2\" 20V DCF512B Brushless",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Catraca a bateria com encaixe de 1/2\", cabeça compacta para espaços reduzidos e motor brushless. Ideal para mecânica automotiva.",
+    image: dewaltDcf512b.url,
+  },
+  {
+    id: "dewalt-furadeira-fio-13mm",
+    name: "Furadeira com Fio 1/2\" 13mm com Punho Lateral",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Furadeira elétrica robusta com mandril de coroa 13mm, velocidade variável, reversão e punho auxiliar para maior controle.",
+    image: dewaltFuradeiraFio.url,
+  },
+  {
+    id: "dewalt-drywall-xr",
+    name: "Parafusadeira Drywall 20V XR com Bateria 4Ah",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Parafusadeira para gesso acartonado com bico limitador de profundidade, motor brushless e alta autonomia. Acompanha bateria XR.",
+    image: dewaltDrywall.url,
+  },
 
 
 
@@ -314,6 +369,51 @@ export const PRODUCTS: Product[] = [
     description:
       "Torneira elétrica branca de parede com bica alta giratória e três temperaturas de aquecimento.",
     image: lorenzettiLorenEasy.url,
+  },
+  {
+    id: "lorenzetti-aquecedor-versatil",
+    name: "Aquecedor Versátil Lorenzetti",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Aquecedor de água compacto para torneiras e duchas, com controle de temperatura e instalação versátil em parede.",
+    image: lorenzettiAquecedorVersatil.url,
+  },
+  {
+    id: "lorenzetti-ducha-higienica-3t",
+    name: "Ducha Higiênica 3T",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Ducha higiênica com aquecimento elétrico de 3 temperaturas, gatilho ergonômico e mangueira flexível cromada.",
+    image: lorenzettiDuchaHigienica.url,
+  },
+  {
+    id: "lorenzetti-advanced-eletronica",
+    name: "Chuveiro Advanced Eletrônica com Haste",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Chuveiro eletrônico com haste, espalhador amplo e ajuste contínuo de temperatura para banhos confortáveis.",
+    image: lorenzettiAdvancedHaste.url,
+  },
+  {
+    id: "lorenzetti-loren-comfort",
+    name: "Chuveiro Loren Comfort Eletrônico",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Modelo eletrônico com haste e espalhador redondo de grande diâmetro, proporcionando jatos suaves e temperatura ajustável.",
+    image: lorenzettiLorenComfort.url,
+  },
+  {
+    id: "lorenzetti-maxi-banho-ultra",
+    name: "Chuveiro Maxi Banho Ultra 127V 4600W",
+    brand: "Lorenzetti",
+    category: "Eletrodomésticos",
+    description:
+      "Chuveiro com três posições (Inverno, Desliga e Verão), 4600W e jatos abundantes. Resistência de fácil substituição.",
+    image: lorenzettiMaxiBanhoUltra.url,
   },
 
   // Makita
