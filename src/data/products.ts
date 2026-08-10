@@ -224,11 +224,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "dewalt-dcd796-xr-kit",
-    name: "Parafusadeira / Furadeira de Impacto 20V | 2 Ah XR com Bateria",
+    name: "Parafusadeira / Furadeira\u00a0 20V |2 Baterias 2 Ah Motor Brushless\u00a0",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V XR | Torque max : 70 Nm | Mandril : 13 mm | Vel. : 2 | Impacto : Sim | Bateria : 2,0 Ah inclusa | Luz de Led : Sim",
+      "Tensão : 20V MAX | Torque max : 70 Nm | Pos. Torque: 15| Mandril : 13 mm | Vel. : 2 | Impacto : Sim | Bateria : 2,0 Ah inclusa | Luz de Led : Sim | Peso : 1,3Kg | Max. Madeira : 40mm | Max. aço : 13mm",
     image: dewaltDcd796Xr.url,
   },
   {
