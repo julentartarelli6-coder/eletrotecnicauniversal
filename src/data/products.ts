@@ -260,11 +260,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "dewalt-dcd777-2ah",
-    name: "Parafusadeira / Furadeira 20V MAX Brushless com Bateria 2Ah",
+    name: "Parafusadeira / Furadeira 20V de Impacto MAX Brushless com Bateria 2Ah",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Motor brushless, mandril de aperto rápido de 13mm e embreagem de 15 posições. Leve e equilibrada para o uso diário.",
+      "Torque max : 65 | pos. de torque : 22 | Vel. :2 | Luz de Led : Sim\nPeso : 2,3 Kg | Máx. Madeira : 38 mm | Máx. aço : 13mm\nMáx. Alvenaria : 13 mm",
     image: dewaltDcd777.url,
   },
   {
