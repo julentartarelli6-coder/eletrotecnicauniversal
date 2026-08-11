@@ -34,7 +34,7 @@ import nigroEterna45 from "@/assets/nigro1.png";
 import nigroEterna60 from "@/assets/nigro2.png";
 import jactoJ7Pro from "@/assets/jacto4.png";
 import jactoJ7000Plus from "@/assets/jacto3.png";
-import zagonelQuadratta from "@/assets/zagonel2.png";
+import zagonelQuadratta from "@/assets/zagonel2.webp";
 import zagonelMomentiBlack from "@/assets/zagonel3.png";
 import zagonelFluir from "@/assets/zagonel4.png";
 import lorenzettiLorenEasy from "@/assets/lorenzetti5.png";
