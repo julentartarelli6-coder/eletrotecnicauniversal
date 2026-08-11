@@ -19,7 +19,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-3">
               <img
-                src={logo.url}
+                src={logo}
                 alt="Eletrotécnica Universal"
                 width={56}
                 height={56}

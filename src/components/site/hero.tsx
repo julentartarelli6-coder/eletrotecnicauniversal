@@ -14,7 +14,7 @@ export function Hero() {
   return (
     <section id="inicio" className="relative isolate overflow-hidden surface-navy">
       <img
-        src={hero.url}
+        src={hero}
         alt="Oficina da Eletrotécnica Universal com ferramentas elétricas profissionais"
         fetchPriority="high"
         decoding="async"
