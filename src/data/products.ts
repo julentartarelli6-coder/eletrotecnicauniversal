@@ -83,7 +83,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 3,6V (bateria interna de lítio) | Torque max : 4,5 Nm | Pos. de torque : 5 + modo direto | Vel. sem carga : 360 RPM | Encaixe : 1/4\" hexagonal | Acionamento : Push & Go automático | Luz de Led : Sim | Peso : 0,3 Kg | Carga : Cabo micro USB (~3 h) | Acompanha : 33 pontas, cabo USB, manual e maleta | Embalagem : Maleta plástica | Uso : Montagem de móveis e reparos domésticos",
-    image: boschGo.url,
+    image: boschGo,
   },
 
   // DeWalt
