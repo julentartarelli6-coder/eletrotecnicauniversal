@@ -43,7 +43,7 @@ export function Navbar() {
       >
         <a href="#inicio" className="flex min-w-0 items-center gap-3">
           <img
-            src={logo.url}
+            src={logo}
             alt="Eletrotécnica Universal"
             width={48}
             height={48}
