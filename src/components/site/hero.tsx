@@ -1,5 +1,5 @@
 import { BadgeCheck, Clock, MessageSquareQuote, Wrench } from "lucide-react";
-import hero from "@/assets/hero.jpg.asset.json";
+import hero from "@/assets/hero.jpg";
 import { Button } from "@/components/ui/button";
 import { whatsappLink } from "@/lib/site";
 

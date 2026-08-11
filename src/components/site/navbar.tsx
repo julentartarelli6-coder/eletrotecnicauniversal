@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, Phone } from "lucide-react";
-import logo from "@/assets/logo.png.asset.json";
+import logo from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { SITE, whatsappLink } from "@/lib/site";

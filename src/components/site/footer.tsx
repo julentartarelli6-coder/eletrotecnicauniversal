@@ -1,5 +1,5 @@
 import { Instagram, MapPin, Phone } from "lucide-react";
-import logo from "@/assets/logo.png.asset.json";
+import logo from "@/assets/logo.png";
 import { SITE } from "@/lib/site";
 
 const LINKS = [
