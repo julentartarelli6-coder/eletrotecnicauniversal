@@ -75,7 +75,9 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
+      { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+
       { name: "author", content: "Eletrotécnica Universal" },
 
       { name: "theme-color", content: "#0b1f4b" },
