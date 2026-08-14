@@ -12,3 +12,6 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://eletrotecnicauniversal.lovable.app/sitemap.xml
+
