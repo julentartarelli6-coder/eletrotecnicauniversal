@@ -84,6 +84,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Eletrotécnica Universal" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "google-site-verification", content: "bADCeGOxoO9VcEHNZLrWaQFB0LVAO9bPMLUzo2Bk4E0" },
+
     ],
     links: [
       { rel: "stylesheet", href: appCss },
