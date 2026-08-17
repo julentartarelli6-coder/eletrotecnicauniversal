@@ -65,7 +65,7 @@ import chave1 from "@/assets/chave1.png";
 import serra1 from "@/assets/serra1.png";
 import bateria1 from "@/assets/bateria1.png";
 import eletroserra1 from "@/assets/eletroserra1.png";
-import lanterna1 from "@/assets/lanterna11.png";
+import lanterna1 from "@/assets/lanterna1.png";
 import dewalt12v from "@/assets/12v.png";
 import chave2 from "@/assets/chave2.png";
 import parafusadeira3 from "@/assets/parafusadeira3.png";
