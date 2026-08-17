@@ -5,17 +5,14 @@ import { Button } from "@/components/ui/button";
 import { PRODUCTS, CATEGORIES, type Product, type ProductCategory } from "@/data/products";
 import { whatsappLink } from "@/lib/site";
 import { cn } from "@/lib/utils";
-import dewaltSpecs from "@/assets/dewalt-specs.png.asset.json";
 
 type Filter = "Todos" | ProductCategory;
 
 const FILTERS: Filter[] = ["Todos", ...CATEGORIES];
 
 function ProductCard({ product }: { product: Product }) {
-  const images =
-    product.brand.toLowerCase() === "dewalt"
-      ? [product.image, dewaltSpecs.url]
-      : [product.image];
+  const images = Array.isArray(product.image) ? product.image : [product.image];
+
   const [index, setIndex] = useState(0);
   const hasCarousel = images.length > 1;
 
