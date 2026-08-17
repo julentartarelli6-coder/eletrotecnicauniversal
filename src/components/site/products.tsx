@@ -1,21 +1,31 @@
 import { useState } from "react";
-import { MessageCircle } from "lucide-react";
+import { ChevronLeft, ChevronRight, MessageCircle } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/site/section";
 import { Button } from "@/components/ui/button";
 import { PRODUCTS, CATEGORIES, type Product, type ProductCategory } from "@/data/products";
 import { whatsappLink } from "@/lib/site";
 import { cn } from "@/lib/utils";
+import dewaltSpecs from "@/assets/dewalt-specs.png.asset.json";
 
 type Filter = "Todos" | ProductCategory;
 
 const FILTERS: Filter[] = ["Todos", ...CATEGORIES];
 
 function ProductCard({ product }: { product: Product }) {
+  const images =
+    product.brand.toLowerCase() === "dewalt"
+      ? [product.image, dewaltSpecs.url]
+      : [product.image];
+  const [index, setIndex] = useState(0);
+  const hasCarousel = images.length > 1;
+
+  const go = (dir: number) => setIndex((i) => (i + dir + images.length) % images.length);
+
   return (
     <article className="card-lift group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
       <div className="relative aspect-4/3 overflow-hidden bg-secondary">
         <img
-          src={product.image}
+          src={images[index]}
           alt={`${product.name} — ${product.brand}`}
           loading="lazy"
           decoding="async"
@@ -24,32 +34,40 @@ function ProductCard({ product }: { product: Product }) {
         <span className="absolute left-3 top-3 rounded-full bg-navy/90 px-3 py-1 text-[0.68rem] font-bold uppercase tracking-widest text-navy-foreground backdrop-blur">
           {product.category}
         </span>
+
+        {hasCarousel && (
+          <>
+            <button
+              type="button"
+              onClick={() => go(-1)}
+              aria-label="Foto anterior"
+              className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-navy/85 p-2 text-navy-foreground shadow-lift transition-colors hover:bg-brand-red"
+            >
+              <ChevronLeft className="size-5" aria-hidden="true" />
+            </button>
+            <button
+              type="button"
+              onClick={() => go(1)}
+              aria-label="Próxima foto"
+              className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-navy/85 p-2 text-navy-foreground shadow-lift transition-colors hover:bg-brand-red"
+            >
+              <ChevronRight className="size-5" aria-hidden="true" />
+            </button>
+            <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5">
+              {images.map((img, i) => (
+                <span
+                  key={img}
+                  className={cn(
+                    "h-1.5 w-1.5 rounded-full transition-colors",
+                    i === index ? "bg-brand-red" : "bg-navy/30",
+                  )}
+                />
+              ))}
+            </div>
+          </>
+        )}
       </div>
 
-      <div className="flex flex-1 flex-col p-5">
-        <p className="text-xs font-bold uppercase tracking-widest text-brand-red">
-          {product.brand}
-        </p>
-        <h3 className="mt-2 text-base font-bold leading-snug text-navy">{product.name}</h3>
-        <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
-          {product.description}
-        </p>
-        <p className="mt-4 font-display text-lg font-extrabold text-navy">
-          {product.price ?? (
-            <span className="text-sm font-semibold text-muted-foreground">Consulte o valor</span>
-          )}
-        </p>
-        <Button asChild variant="whats" size="default" className="mt-4 w-full">
-          <a
-            href={whatsappLink(
-              `Olá! Tenho interesse no produto: ${product.name} (${product.brand}).`,
-            )}
-          >
-            <MessageCircle aria-hidden="true" />
-            Solicitar pelo WhatsApp
-          </a>
-        </Button>
-      </div>
     </article>
   );
 }
