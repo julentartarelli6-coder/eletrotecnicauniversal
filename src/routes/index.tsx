@@ -40,6 +40,8 @@ export const Route = createFileRoute("/")({
           "@type": "LocalBusiness",
           name: "Eletrotécnica Universal",
           description: DESCRIPTION,
+          logo: "https://eletrotecnicauniversal.lovable.app/favicon.png",
+          image: "https://eletrotecnicauniversal.lovable.app/favicon.png",
           telephone: "+55 44 99814-7575",
           address: {
             "@type": "PostalAddress",
