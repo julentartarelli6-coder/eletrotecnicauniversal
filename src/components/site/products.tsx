@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { PRODUCTS, CATEGORIES, type Product, type ProductCategory } from "@/data/products";
 import { whatsappLink } from "@/lib/site";
 import { cn } from "@/lib/utils";
-import dewaltSpecs from "@/assets/dewalt-specs.png.asset.json";
 
 type Filter = "Todos" | ProductCategory;
 
