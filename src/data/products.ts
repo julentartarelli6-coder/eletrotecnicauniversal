@@ -94,7 +94,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX XR | Torque max : 205 Nm | Encaixe : 1/2\" com pino de retenção | Motor : Brushless | Vel. : 3 + modo precision wrench | Vel. sem carga : 0-900 \\ 0-2.000 \\ 0-3.250 RPM | Impactos : até 3.600 IPM | Luz de Led : Sim (3 pontos) | Peso : 1,6 Kg | Bateria : Íon-lítio 20V inclusa | Acompanha : Manual, bateria, carregador e maleta | Uso : Mecânica automotiva e montagem industrial",
-    image: p1,
+    image: [p1, p2],
   },
   {
     id: "dewalt-dcd796",
