@@ -55,7 +55,7 @@ import lorenzettiMaxiBanhoUltra from "@/assets/lorenzetti6.png";
 import lorenzettiTradicao from "@/assets/lorenzetti7.png";
 import lorenzettiAcquaStorm from "@/assets/lorenzetti8.png";
 import lorenzettiDuchaFashion from "@/assets/lorenzetti9.png";
-import dewaltSpecsAsset from "@/assets/1007.png";
+import dewaltSpecs from "@/assets/1007.png";
 import moto from "@/assets/moto.png";
 import moto1 from "@/assets/moto1.png";
 import trena1 from "@/assets/trena1.png";
@@ -113,7 +113,7 @@ export const PRODUCTS: Product[] = [
     brand: "Bosch",
     category: "Ferramentas",
     description:
-      "Tensão : 3,6V (bateria interna de lítio) | Torque max : 4,5 Nm | Pos. de torque : 5 + modo direto | Vel. sem carga : 360 RPM | Encaixe : 1/4\" hexagonal | Acionamento : Push & Go automático | Luz de Led : Sim | Peso : 0,3 Kg | Carga : Cabo micro USB (~3 h) | Acompanha : 33 pontas, cabo USB, manual e maleta | Embalagem : Maleta plástica | Uso : Montagem de móveis e reparos domésticos",
+      "Tensão : 3,6V (bateria interna de lítio) | Torque max : 4,5 Nm | Pos. de torque : 5 + modo direto | Vel. sem carga : 360 RPM | Encaixe : 1/4\" hexagonal | Uso : Montagem de móveis e reparos domésticos",
     image: boschGo,
   },
 
@@ -124,7 +124,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : O Aparador de cerca viva a bateria da Dewalt é essencial para manter suas cercas vivas impecáveis e bem cuidadas. Com um design inovador e recursos de última geração, este aparador não só garante eficiência, como também oferece conforto e segurança no uso prolongado",
+      "Tensão : O Aparador de cerca viva a bateria da Dewalt é essencial para manter suas cercas vivas impecáveis e bem cuidadas. Este aparador não só garante eficiência, como também oferece conforto e segurança no uso prolongado",
     image: [moto, moto1],
   },
   {
@@ -133,7 +133,7 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Motor brushless. Ideal para uso profissional diário.",
+      "Parafusadeira / Furadeira de Impacto  com Motor brushless. Ideal para uso profissional diário.",
     image: [p2, p22],
   },
   {
