@@ -55,6 +55,10 @@ import lorenzettiTradicao from "@/assets/lorenzetti7.png";
 import lorenzettiAcquaStorm from "@/assets/lorenzetti8.png";
 import lorenzettiDuchaFashion from "@/assets/lorenzetti9.png";
 import dewaltDcd1007Powerpack from "@/assets/dewalt9.png";
+import dewaltSpecsAsset from "@/assets/dewalt-specs.png.asset.json";
+
+/** Segunda foto usada nos carrosséis dos produtos DeWalt */
+const dewaltSpecs = dewaltSpecsAsset.url;
 
 export type ProductCategory = "Ferramentas" | "Eletrodomésticos" | "Outros";
 
@@ -66,7 +70,8 @@ export interface Product {
   description: string;
   /** Opcional: deixe vazio para exibir "Consulte o valor" */
   price?: string;
-  image: string;
+  /** Uma foto, ou uma lista de fotos para exibir em carrossel */
+  image: string | string[];
 }
 
 /**
@@ -94,7 +99,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX XR | Torque max : 205 Nm | Encaixe : 1/2\" com pino de retenção | Motor : Brushless | Vel. : 3 + modo precision wrench | Vel. sem carga : 0-900 \\ 0-2.000 \\ 0-3.250 RPM | Impactos : até 3.600 IPM | Luz de Led : Sim (3 pontos) | Peso : 1,6 Kg | Bateria : Íon-lítio 20V inclusa | Acompanha : Manual, bateria, carregador e maleta | Uso : Mecânica automotiva e montagem industrial",
-    image: [p1, p2],
+    image: [p1, dewaltSpecs],
   },
   {
     id: "dewalt-dcd796",
@@ -103,7 +108,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX XR | Torque max : 70 Nm | Pos. de torque : 15 + furar/impacto | Mandril : 13 mm de aperto rápido | Motor : Brushless | Vel. : 2 | Vel. sem carga : 0-550 \\ 0-2.000 RPM | Impactos : até 34.000 IPM | Máx. madeira : 40 mm | Máx. aço : 13 mm | Máx. alvenaria : 13 mm | Luz de Led : Sim | Peso : 1,6 Kg | Acompanha : Manual, punho lateral e maleta",
-    image: p2,
+    image: [p2, dewaltSpecs],
   },
   {
     id: "dewalt-dcd1007",
@@ -112,7 +117,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX XR | Torque max : 90 Nm | Mandril : 13 mm de aperto rápido | Motor : Brushless | Vel. : 3 | Vel. sem carga : 0-450 \\ 0-1.300 \\ 0-2.000 RPM | Impactos : até 38.250 BPM | Máx. madeira : 40 mm | Máx. aço : 13 mm | Máx. alvenaria : 16 mm | Luz de Led : Sim | Punho lateral : Sim | Peso : 1,8 Kg | Uso : Furação pesada em concreto e metal",
-    image: p3,
+    image: [p3, dewaltSpecs],
   },
   {
     id: "dewalt-esmerilhadeira-7",
@@ -121,7 +126,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Potência : 2.200W | Tensão : 220V | Disco : 7\" (180 mm) | Rosca do eixo : M14 | Vel. sem carga : 8.500 RPM | Partida suave : Sim | Proteção contra rearme : Sim | Punho lateral : 3 posições | Protetor de disco : Ajuste sem ferramenta | Peso : 5,3 Kg | Acompanha : Punho lateral, chave e protetor | Uso : Corte e desbaste em obra",
-    image: dewaltEsmerilhadeira,
+    image: [dewaltEsmerilhadeira, dewaltSpecs],
   },
   {
     id: "dewalt-soprador",
@@ -130,7 +135,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tipo : Com fio | Tensão : 220V | Potência : 530W | Vazão de ar : até 2,3 m³/min | Velocidade do ar : até 90 m/s | Vel. variável : Sim | Bico direcionador : Removível | Peso : 1,6 Kg | Acompanha : Bico soprador e manual | Uso : Limpeza de oficinas, máquinas e bancadas",
-    image: dewaltSoprador,
+    image: [dewaltSoprador, dewaltSpecs],
   },
   {
     id: "dewalt-trena-8m",
@@ -139,7 +144,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Comprimento : 8 m | Largura da fita : 26 mm | Alcance sem apoio : até 2,8 m | Trava : Sim | Gancho : Reforçado e magnético | Corpo : Emborrachado antiqueda | Clipe de cinto : Sim | Graduação : Métrica e em polegadas | Peso : 0,4 Kg | Uso : Obra, marcenaria e instalação",
-    image: dewaltTrena,
+    image: [dewaltTrena, dewaltSpecs],
   },
   {
     id: "dewalt-canivete-quickflip",
@@ -148,7 +153,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Lâmina : Aço inox 3\" | Abertura : Rápida assistida (Quick Flip) | Cabo : Alumínio com pegada emborrachada | Trava de segurança : Sim | Clipe de bolso : Reversível | Peso : 0,12 Kg | Uso : Corte de fitas, cabos e uso geral em obra",
-    image: dewaltCanivete,
+    image: [dewaltCanivete, dewaltSpecs],
   },
   {
     id: "dewalt-dwht66719",
@@ -157,7 +162,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tipo : Manual com catraca | Encaixe : 1/4\" hexagonal | Posições da catraca : 3 (frente, trava e reverso) | Torque : Manual de alta precisão | Cabo : Emborrachado bimaterial | Armazenamento : Compartimento de pontas no cabo | Peso : 0,3 Kg | Uso : Apertos precisos em eletrônicos, móveis e elétrica",
-    image: dewaltDwht66719,
+    image: [dewaltDwht66719, dewaltSpecs],
   },
   {
     id: "dewalt-dcf922",
@@ -166,7 +171,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX | Torque max : 406 Nm | Torque de rompimento : até 610 Nm | Encaixe : 1/2\" com anel de retenção | Motor : Brushless | Vel. : 3 | Vel. sem carga : 0-900 \\ 0-1.900 \\ 0-2.400 RPM | Impactos : até 3.400 IPM | Luz de Led : Sim | Peso : 1,5 Kg | Acompanha : 2 baterias 2,0 Ah, carregador e maleta | Embalagem : Maleta plástica",
-    image: dewaltDcf922,
+    image: [dewaltDcf922, dewaltSpecs],
   },
   {
     id: "dewalt-serra-circular-20v",
@@ -175,7 +180,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX XR | Disco : 184 mm (7.1/4\") com 24 dentes | Furo do disco : 20 mm | Vel. sem carga : 5.800 RPM | Motor : Brushless | Prof. de corte a 90° : 65 mm | Prof. de corte a 45° : 49 mm | Base : Alumínio com ajuste de ângulo 0-57° | Freio elétrico : Sim | Saída de pó : Sim | Peso : 3,4 Kg | Bateria : Consulte versão",
-    image: dewaltSerraCircular,
+    image: [dewaltSerraCircular, dewaltSpecs],
   },
   {
     id: "dewalt-dcb203",
@@ -184,7 +189,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX XR | Capacidade : 2,0 Ah | Tecnologia : Íon-lítio | Energia : 40 Wh | Indicador de carga : 3 Leds | Tempo de carga : ~30 min (carregador rápido) | Peso : 0,4 Kg | Sem efeito memória : Sim | Compatibilidade : Toda a linha 20V MAX DeWalt",
-    image: dewaltDcb203,
+    image: [dewaltDcb203, dewaltSpecs],
   },
   {
     id: "dewalt-dccs623b",
@@ -193,7 +198,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX | Sabre : 8\" (20 cm) | Motor : Brushless | Vel. da corrente : 7,6 m/s | Tensionamento : Sem ferramentas | Lubrificação : Automática com reservatório | Capacidade de corte : até 15 cm de diâmetro | Peso : 3,4 Kg | Bateria : Não inclusa (vendida separadamente) | Uso : Poda de galhos e jardinagem",
-    image: dewaltDccs623b,
+    image: [dewaltDccs623b, dewaltSpecs],
   },
   {
     id: "dewalt-lanterna-18v",
@@ -202,7 +207,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX XR / Power Stack | Luminosidade : até 1.000 lumens | Modos : 3 níveis de intensidade | Autonomia : até 30 h (modo econômico) | Cabeçote : Giratório 360° | Gancho de fixação : Sim | Corpo : Alumínio resistente a impacto | Peso : 0,7 Kg | Bateria : Não inclusa",
-    image: dewaltLanterna,
+    image: [dewaltLanterna, dewaltSpecs],
   },
   {
     id: "dewalt-12v-max",
@@ -211,7 +216,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 12V MAX | Torque max : 24 Nm | Pos. de torque : 15 + furar | Mandril : 10 mm de aperto rápido | Vel. : 2 | Vel. sem carga : 0-400 \\ 0-1.500 RPM | Máx. madeira : 25 mm | Máx. aço : 10 mm | Luz de Led : Sim | Peso : 1,1 Kg | Acompanha : Bateria 1,5 Ah, carregador e maleta | Uso : Montagem e reparos leves",
-    image: dewalt12vMax,
+    image: [dewalt12vMax, dewaltSpecs],
   },
   {
     id: "dewalt-dcf894",
@@ -220,7 +225,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX XR | Torque max : 447 Nm | Torque de rompimento : até 610 Nm | Encaixe : 1/2\" com anel de retenção | Motor : Brushless | Vel. : 3 + modo precision wrench | Vel. sem carga : 0-900 \\ 0-2.000 \\ 0-3.250 RPM | Impactos : até 3.600 IPM | Luz de Led : Sim | Peso : 1,7 Kg | Bateria : 4,0 Ah | Uso : Rodas, chassis e manutenção pesada",
-    image: dewaltDcf894,
+    image: [dewaltDcf894, dewaltSpecs],
   },
   {
     id: "dewalt-dcd796-xr-kit",
@@ -229,7 +234,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX | Torque max : 70 Nm | Pos. Torque: 15| Mandril : 13 mm - Aperto rápido | Vel. : 2 | Vel. sem carga : 0-550 \\ 0-2000 RPM | Impacto : Sim | Bateria : 2,0 Ah inclusa | Luz de Led : Sim | Peso : 1,3Kg | Max. Madeira : 40mm | Max. aço : 13mm | Opções :DCD791D2-B2 (220V) DCD791D2-BR (127V) | Acompanha : Manual , 2 baterias 20V MAX - 2Ah , carregador e maleta de transporte | Embalagem : Maleta Plástica .",
-    image: dewaltDcd796Xr,
+    image: [dewaltDcd796Xr, dewaltSpecs],
   },
   {
     id: "dewalt-dch263b",
@@ -238,7 +243,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX | Encaixe : SDS-Plus | Funções : 3 (furar, furar com impacto e romper) | Energia de impacto : 2,6 J | Vel. sem carga : 0-1.100 RPM | Impactos : até 4.600 BPM | Máx. concreto : 26 mm | Controle de vibração : Sim | Embreagem de segurança : Sim | Punho lateral : 360° | Peso : 3,0 Kg | Bateria : Não inclusa",
-    image: dewaltDch263b,
+    image: [dewaltDch263b, dewaltSpecs],
   },
   {
     id: "dewalt-dcd1007-5ah",
@@ -247,7 +252,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX XR | Torque max : 90 Nm | Mandril : 13 mm (1/2\") de aperto rápido | Motor : Brushless | Vel. : 3 | Vel. sem carga : 0-450 \\ 0-1.300 \\ 0-2.000 RPM | Impacto : Sim | Máx. madeira : 40 mm | Máx. aço : 13 mm | Máx. alvenaria : 16 mm | Punho lateral : Sim | Luz de Led : Sim | Peso : 1,9 Kg | Acompanha : Bateria 5,0 Ah, carregador e maleta",
-    image: dewaltDcd1007_5ah,
+    image: [dewaltDcd1007_5ah, dewaltSpecs],
   },
   {
     id: "dewalt-dcd1007-powerpack",
@@ -256,7 +261,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX XR | Torque max : 90 Nm | Mandril : 13 mm (1/2\") de aperto rápido | Motor : Brushless | Vel. : 3 | Vel. sem carga : 0-450 \\ 0-1.300 \\ 0-2.000 RPM | Impacto : Sim | Máx. madeira : 40 mm | Máx. aço : 13 mm | Máx. alvenaria : 16 mm | Luz de Led : Sim | Peso : 1,9 Kg | Carregador : 220V | Versão : Powerpack (bateria Power Stack)",
-    image: dewaltDcd1007Powerpack,
+    image: [dewaltDcd1007Powerpack, dewaltSpecs],
   },
   {
     id: "dewalt-dcd777-2ah",
@@ -265,7 +270,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Torque max : 65 | pos. de torque : 22 | Vel. : 2 | Luz de Led : Sim | Peso : 2,3 Kg | Máx. Madeira : 38 mm | Máx. aço : 13mm | Máx. Alvenaria : 13 mm",
-    image: dewaltDcd777,
+    image: [dewaltDcd777, dewaltSpecs],
   },
   {
     id: "dewalt-dcf512b",
@@ -274,7 +279,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX | Torque max : 81 Nm | Encaixe : 1/2\" | Vel. sem carga : 250 RPM | Motor : Brushless | Reversão : Sim | Luz de Led : Sim | Comprimento : 28 cm (acesso a locais estreitos) | Peso : 1,3 Kg | Bateria : Não inclusa | Uso : Mecânica automotiva e manutenção industrial",
-    image: dewaltDcf512b,
+    image: [dewaltDcf512b, dewaltSpecs],
   },
   {
     id: "dewalt-furadeira-fio-13mm",
@@ -283,7 +288,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tipo : Com fio | Tensão : 220V | Potência : 710W | Mandril : 13 mm (1/2\") de coroa com chave | Vel. sem carga : 0-2.800 RPM | Vel. variável : Sim (gatilho) | Reversão : Sim | Máx. madeira : 25 mm | Máx. aço : 13 mm | Punho lateral : 360° | Cabo : 2 m | Peso : 2,2 Kg",
-    image: dewaltFuradeiraFio,
+    image: [dewaltFuradeiraFio, dewaltSpecs],
   },
   {
     id: "dewalt-drywall-xr",
@@ -292,7 +297,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Tensão : 20V MAX XR | Vel. sem carga : 0-4.400 RPM | Motor : Brushless | Encaixe : 1/4\" hexagonal | Embreagem : Silenciosa com desligamento automático | Bico limitador de profundidade : Ajustável e removível | Reversão : Sim | Luz de Led : Sim | Gancho de cinto : Sim | Peso : 1,5 Kg | Acompanha : Bateria 5,0 Ah, carregador e maleta | Uso : Gesso acartonado e steel frame",
-    image: dewaltDrywall,
+    image: [dewaltDrywall, dewaltSpecs],
   },
 
 
