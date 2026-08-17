@@ -68,7 +68,32 @@ function ProductCard({ product }: { product: Product }) {
         )}
       </div>
 
+      <div className="flex flex-1 flex-col p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand-red">
+          {product.brand}
+        </p>
+        <h3 className="mt-2 text-base font-bold leading-snug text-navy">{product.name}</h3>
+        <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+          {product.description}
+        </p>
+        <p className="mt-4 font-display text-lg font-extrabold text-navy">
+          {product.price ?? (
+            <span className="text-sm font-semibold text-muted-foreground">Consulte o valor</span>
+          )}
+        </p>
+        <Button asChild variant="whats" size="default" className="mt-4 w-full">
+          <a
+            href={whatsappLink(
+              `Olá! Tenho interesse no produto: ${product.name} (${product.brand}).`,
+            )}
+          >
+            <MessageCircle aria-hidden="true" />
+            Solicitar pelo WhatsApp
+          </a>
+        </Button>
+      </div>
     </article>
+
   );
 }
 
