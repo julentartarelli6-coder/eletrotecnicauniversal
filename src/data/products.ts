@@ -1,6 +1,5 @@
-import p1 from "@/assets/dewalt1.png";
 import p2 from "@/assets/dewalt2.png";
-import p3 from "@/assets/dewalt3.png";
+import p22 from "@/assets/p22.png";
 import p4 from "@/assets/makita1.png";
 import p5 from "@/assets/makita2.png";
 import p6 from "@/assets/makita3.png";
@@ -8,7 +7,9 @@ import p7 from "@/assets/lorenzetti1.png";
 import p8 from "@/assets/elgin.png";
 import boschGo from "@/assets/bosch.png";
 import dewaltEsmerilhadeira from "@/assets/esmerilhadeira.png";
+import esmerilhadeira1 from "@/assets/esmerilhadeira1.png";
 import dewaltSoprador from "@/assets/soprador.png";
+import soprador from "@/assets/soprador1.png";
 import jactoJ7000 from "@/assets/jacto1.png";
 import jactoJ6800 from "@/assets/jacto2.png";
 import lorenzettiDuoShower from "@/assets/lorenzetti2.png";
@@ -30,7 +31,7 @@ import dewalt12vMax from "@/assets/furadeira.png";
 import dewaltDcf894 from "@/assets/chaveimpacto2.png";
 import dewaltDcd796Xr from "@/assets/parafusadeira2.png";
 import dewaltDch263b from "@/assets/martelete.png";
-import nigroEterna45 from "@/assets/nigro1.png";
+import nigropequena from "@/assets/nigropequena.png";
 import nigroEterna60 from "@/assets/nigro2.png";
 import jactoJ7Pro from "@/assets/jacto4.png";
 import jactoJ7000Plus from "@/assets/jacto3.png";
@@ -54,8 +55,33 @@ import lorenzettiMaxiBanhoUltra from "@/assets/lorenzetti6.png";
 import lorenzettiTradicao from "@/assets/lorenzetti7.png";
 import lorenzettiAcquaStorm from "@/assets/lorenzetti8.png";
 import lorenzettiDuchaFashion from "@/assets/lorenzetti9.png";
-import dewaltDcd1007Powerpack from "@/assets/dewalt9.png";
-import dewaltSpecsAsset from "@/assets/dewalt-specs.png.asset.json";
+import dewaltSpecsAsset from "@/assets/1007.png";
+import moto from "@/assets/moto.png";
+import moto1 from "@/assets/moto1.png";
+import trena1 from "@/assets/trena1.png";
+import canivete from "@/assets/canivete1.png";
+import parafusadeira1 from "@/assets/parafusadeira1.png";
+import chave1 from "@/assets/chave1.png";
+import serra1 from "@/assets/serra1.png";
+import bateria1 from "@/assets/bateria1.png";
+import eletroserra1 from "@/assets/eletroserra1.png";
+import lanterna1 from "@/assets/lanterna11.png";
+import dewalt12v from "@/assets/12v.png";
+import chave2 from "@/assets/chave2.png";
+import parafusadeira3 from "@/assets/parafusadeira3.png";
+import martelete1 from "@/assets/martelete1.png";
+import lixadeira from "@/assets/lixadeira.png";
+import lixadeira1 from "@/assets/lixadeira1.png";
+import parafusadeira4 from "@/assets/parafusadeira4.png";
+import catraca from "@/assets/catraca.png";
+import furadeira1 from "@/assets/furadeira1.png";
+import parafusadeira5 from "@/assets/parafusadeira5.png";
+import aj32 from "@/assets/aj32.png";
+import mserra from "@/assets/mserra.png";
+import nigro20 from "@/assets/nigro20.png";
+
+
+
 
 /** Segunda foto usada nos carrosséis dos produtos DeWalt */
 const dewaltSpecs = dewaltSpecsAsset.url;
@@ -94,12 +120,12 @@ export const PRODUCTS: Product[] = [
   // DeWalt
   {
     id: "dewalt-chave-impacto",
-    name: "Chave de Impacto 20V XR Brushless",
+    name: "Aparador de cerca viva a bateria 20V Sem Bateria",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX XR | Torque max : 205 Nm | Encaixe : 1/2\" com pino de retenção | Motor : Brushless | Vel. : 3 + modo precision wrench | Vel. sem carga : 0-900 \\ 0-2.000 \\ 0-3.250 RPM | Impactos : até 3.600 IPM | Luz de Led : Sim (3 pontos) | Peso : 1,6 Kg | Bateria : Íon-lítio 20V inclusa | Acompanha : Manual, bateria, carregador e maleta | Uso : Mecânica automotiva e montagem industrial",
-    image: [p1, dewaltSpecs],
+      "Tensão : O Aparador de cerca viva a bateria da Dewalt é essencial para manter suas cercas vivas impecáveis e bem cuidadas. Com um design inovador e recursos de última geração, este aparador não só garante eficiência, como também oferece conforto e segurança no uso prolongado",
+    image: [moto, moto1],
   },
   {
     id: "dewalt-dcd796",
@@ -107,17 +133,17 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX XR | Torque max : 70 Nm | Pos. de torque : 15 + furar/impacto | Mandril : 13 mm de aperto rápido | Motor : Brushless | Vel. : 2 | Vel. sem carga : 0-550 \\ 0-2.000 RPM | Impactos : até 34.000 IPM | Máx. madeira : 40 mm | Máx. aço : 13 mm | Máx. alvenaria : 13 mm | Luz de Led : Sim | Peso : 1,6 Kg | Acompanha : Manual, punho lateral e maleta",
-    image: [p2, dewaltSpecs],
+      "Motor brushless. Ideal para uso profissional diário.",
+    image: [p2, p22],
   },
   {
-    id: "dewalt-dcd1007",
-    name: "Furadeira de Impacto DCD1007 3 Velocidades",
+    id: "dewalt-dcd1007-powerpack",
+    name: "Parafusadeira / Furadeira de Impacto DCD1007 20V XR",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX XR | Torque max : 90 Nm | Mandril : 13 mm de aperto rápido | Motor : Brushless | Vel. : 3 | Vel. sem carga : 0-450 \\ 0-1.300 \\ 0-2.000 RPM | Impactos : até 38.250 BPM | Máx. madeira : 40 mm | Máx. aço : 13 mm | Máx. alvenaria : 16 mm | Luz de Led : Sim | Punho lateral : Sim | Peso : 1,8 Kg | Uso : Furação pesada em concreto e metal",
-    image: [p3, dewaltSpecs],
+      "Linha XR e bateria 20V MAX de alta durabilidade.",
+    image: [dewaltDcd1007_5ah, dewaltSpecs],
   },
   {
     id: "dewalt-esmerilhadeira-7",
@@ -125,8 +151,8 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Potência : 2.200W | Tensão : 220V | Disco : 7\" (180 mm) | Rosca do eixo : M14 | Vel. sem carga : 8.500 RPM | Partida suave : Sim | Proteção contra rearme : Sim | Punho lateral : 3 posições | Protetor de disco : Ajuste sem ferramenta | Peso : 5,3 Kg | Acompanha : Punho lateral, chave e protetor | Uso : Corte e desbaste em obra",
-    image: [dewaltEsmerilhadeira, dewaltSpecs],
+      "Potência, resistência e desempenho profissional para aplicações pesadas. ",
+    image: [dewaltEsmerilhadeira, esmerilhadeira1],
   },
   {
     id: "dewalt-soprador",
@@ -134,8 +160,8 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tipo : Com fio | Tensão : 220V | Potência : 530W | Vazão de ar : até 2,3 m³/min | Velocidade do ar : até 90 m/s | Vel. variável : Sim | Bico direcionador : Removível | Peso : 1,6 Kg | Acompanha : Bico soprador e manual | Uso : Limpeza de oficinas, máquinas e bancadas",
-    image: [dewaltSoprador, dewaltSpecs],
+      "Indicado para uso em marcenarias, limpeza de casas e oficinas, aspirar/soprar poeiras e serragens.",
+    image: [dewaltSoprador, soprador],
   },
   {
     id: "dewalt-trena-8m",
@@ -143,8 +169,8 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Comprimento : 8 m | Largura da fita : 26 mm | Alcance sem apoio : até 2,8 m | Trava : Sim | Gancho : Reforçado e magnético | Corpo : Emborrachado antiqueda | Clipe de cinto : Sim | Graduação : Métrica e em polegadas | Peso : 0,4 Kg | Uso : Obra, marcenaria e instalação",
-    image: [dewaltTrena, dewaltSpecs],
+      "A Trena Dewalt é ideal para qualquer tipo de medição, seja em casa, no trabalho ou para profissionais.",
+    image: [dewaltTrena, trena1],
   },
   {
     id: "dewalt-canivete-quickflip",
@@ -152,8 +178,8 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Lâmina : Aço inox 3\" | Abertura : Rápida assistida (Quick Flip) | Cabo : Alumínio com pegada emborrachada | Trava de segurança : Sim | Clipe de bolso : Reversível | Peso : 0,12 Kg | Uso : Corte de fitas, cabos e uso geral em obra",
-    image: [dewaltCanivete, dewaltSpecs],
+      "Canivete dobrável com lâmina em aço inox, abertura rápida com rolamento e cabo em alumínio",
+    image: [dewaltCanivete, canivete],
   },
   {
     id: "dewalt-dwht66719",
@@ -161,8 +187,8 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tipo : Manual com catraca | Encaixe : 1/4\" hexagonal | Posições da catraca : 3 (frente, trava e reverso) | Torque : Manual de alta precisão | Cabo : Emborrachado bimaterial | Armazenamento : Compartimento de pontas no cabo | Peso : 0,3 Kg | Uso : Apertos precisos em eletrônicos, móveis e elétrica",
-    image: [dewaltDwht66719, dewaltSpecs],
+      "Parafusadeira manual com catraca e cabo emborrachado, ideal para apertos precisos em espaços reduzidos.",
+    image: [dewaltDwht66719, parafusadeira1],
   },
   {
     id: "dewalt-dcf922",
@@ -170,8 +196,8 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX | Torque max : 406 Nm | Torque de rompimento : até 610 Nm | Encaixe : 1/2\" com anel de retenção | Motor : Brushless | Vel. : 3 | Vel. sem carga : 0-900 \\ 0-1.900 \\ 0-2.400 RPM | Impactos : até 3.400 IPM | Luz de Led : Sim | Peso : 1,5 Kg | Acompanha : 2 baterias 2,0 Ah, carregador e maleta | Embalagem : Maleta plástica",
-    image: [dewaltDcf922, dewaltSpecs],
+      "Motor brushless compacto com alto torque para montagem e manutenção automotiva.",
+    image: [dewaltDcf922, chave1],
   },
   {
     id: "dewalt-serra-circular-20v",
@@ -179,8 +205,8 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX XR | Disco : 184 mm (7.1/4\") com 24 dentes | Furo do disco : 20 mm | Vel. sem carga : 5.800 RPM | Motor : Brushless | Prof. de corte a 90° : 65 mm | Prof. de corte a 45° : 49 mm | Base : Alumínio com ajuste de ângulo 0-57° | Freio elétrico : Sim | Saída de pó : Sim | Peso : 3,4 Kg | Bateria : Consulte versão",
-    image: [dewaltSerraCircular, dewaltSpecs],
+      "Serra circular a bateria com disco de 184mm e 24 dentes, freio elétrico e base ajustável para cortes em madeira.",
+    image: [dewaltSerraCircular, serra1],
   },
   {
     id: "dewalt-dcb203",
@@ -188,8 +214,8 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX XR | Capacidade : 2,0 Ah | Tecnologia : Íon-lítio | Energia : 40 Wh | Indicador de carga : 3 Leds | Tempo de carga : ~30 min (carregador rápido) | Peso : 0,4 Kg | Sem efeito memória : Sim | Compatibilidade : Toda a linha 20V MAX DeWalt",
-    image: [dewaltDcb203, dewaltSpecs],
+      "Bateria compacta de íon-lítio 20V MAX com indicador de carga, compatível com toda a linha 20V da DeWalt.",
+    image: [dewaltDcb203, bateria1],
   },
   {
     id: "dewalt-dccs623b",
@@ -197,8 +223,8 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX | Sabre : 8\" (20 cm) | Motor : Brushless | Vel. da corrente : 7,6 m/s | Tensionamento : Sem ferramentas | Lubrificação : Automática com reservatório | Capacidade de corte : até 15 cm de diâmetro | Peso : 3,4 Kg | Bateria : Não inclusa (vendida separadamente) | Uso : Poda de galhos e jardinagem",
-    image: [dewaltDccs623b, dewaltSpecs],
+      "Motosserra de poda a bateria com sabre de 8 polegadas, motor brushless, protetor e chave. Leve e ideal para jardinagem.",
+    image: [dewaltDccs623b, eletroserra1],
   },
   {
     id: "dewalt-lanterna-18v",
@@ -206,8 +232,8 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX XR / Power Stack | Luminosidade : até 1.000 lumens | Modos : 3 níveis de intensidade | Autonomia : até 30 h (modo econômico) | Cabeçote : Giratório 360° | Gancho de fixação : Sim | Corpo : Alumínio resistente a impacto | Peso : 0,7 Kg | Bateria : Não inclusa",
-    image: [dewaltLanterna, dewaltSpecs],
+      "Lanterna de trabalho LED com cabeçote giratório e gancho de fixação. Alta luminosidade para oficinas e obras.",
+    image: [dewaltLanterna, lanterna1],
   },
   {
     id: "dewalt-12v-max",
@@ -215,62 +241,53 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 12V MAX | Torque max : 24 Nm | Pos. de torque : 15 + furar | Mandril : 10 mm de aperto rápido | Vel. : 2 | Vel. sem carga : 0-400 \\ 0-1.500 RPM | Máx. madeira : 25 mm | Máx. aço : 10 mm | Luz de Led : Sim | Peso : 1,1 Kg | Acompanha : Bateria 1,5 Ah, carregador e maleta | Uso : Montagem e reparos leves",
-    image: [dewalt12vMax, dewaltSpecs],
+      "Compacta e leve, com mandril de aperto rápido e embreagem ajustável. Perfeita para montagens e serviços leves.",
+    image: [dewalt12vMax, dewalt12v],
   },
   {
-    id: "dewalt-dcf894",
-    name: "Chave de Impacto 1/2\" 20V | 4 Ah XR DCF894 Brushless",
+    id: "dewalt-dcf892",
+    name: "Chave de Impacto 1/2\" 20V Brushless",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX XR | Torque max : 447 Nm | Torque de rompimento : até 610 Nm | Encaixe : 1/2\" com anel de retenção | Motor : Brushless | Vel. : 3 + modo precision wrench | Vel. sem carga : 0-900 \\ 0-2.000 \\ 0-3.250 RPM | Impactos : até 3.600 IPM | Luz de Led : Sim | Peso : 1,7 Kg | Bateria : 4,0 Ah | Uso : Rodas, chassis e manutenção pesada",
-    image: [dewaltDcf894, dewaltSpecs],
+      "Motor brushless de alto torque para uso pesado.",
+    image: [dewaltDcf894, chave2],
   },
   {
     id: "dewalt-dcd796-xr-kit",
-    name: "Parafusadeira / Furadeira\u00a0 20V |2 Baterias 2 Ah Motor Brushless\u00a0",
+    name: "Parafusadeira / Furadeira 20V |2 Baterias 2 Ah Motor Brushless\u00a0",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX | Torque max : 70 Nm | Pos. Torque: 15| Mandril : 13 mm - Aperto rápido | Vel. : 2 | Vel. sem carga : 0-550 \\ 0-2000 RPM | Impacto : Sim | Bateria : 2,0 Ah inclusa | Luz de Led : Sim | Peso : 1,3Kg | Max. Madeira : 40mm | Max. aço : 13mm | Opções :DCD791D2-B2 (220V) DCD791D2-BR (127V) | Acompanha : Manual , 2 baterias 20V MAX - 2Ah , carregador e maleta de transporte | Embalagem : Maleta Plástica .",
-    image: [dewaltDcd796Xr, dewaltSpecs],
+      "Modelo XR brushless com mandril de 13mm, duas velocidades e função impacto. Acompanha bateria 20V MAX.",
+    image: [dewaltDcd796Xr, parafusadeira3],
   },
   {
     id: "dewalt-dch263b",
-    name: "Martelete Rotativo 3 Funções DCH263B SDS-Plus 20V",
+    name: "Martelete DCH263B SDS-Plus 20V",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX | Encaixe : SDS-Plus | Funções : 3 (furar, furar com impacto e romper) | Energia de impacto : 2,6 J | Vel. sem carga : 0-1.100 RPM | Impactos : até 4.600 BPM | Máx. concreto : 26 mm | Controle de vibração : Sim | Embreagem de segurança : Sim | Punho lateral : 360° | Peso : 3,0 Kg | Bateria : Não inclusa",
-    image: [dewaltDch263b, dewaltSpecs],
+      "Martelete a bateria com encaixe .",
+    image: [dewaltDch263b, martelete1],
   },
   {
-    id: "dewalt-dcd1007-5ah",
-    name: "Furadeira / Parafusadeira de Impacto 20V XR 1/2\" com Bateria 5Ah",
+    id: "dewalt-politriz",
+    name: "Politriz/Lixadeira Angular 180MM 1250W Dewalt DWP849X-B2",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX XR | Torque max : 90 Nm | Mandril : 13 mm (1/2\") de aperto rápido | Motor : Brushless | Vel. : 3 | Vel. sem carga : 0-450 \\ 0-1.300 \\ 0-2.000 RPM | Impacto : Sim | Máx. madeira : 40 mm | Máx. aço : 13 mm | Máx. alvenaria : 16 mm | Punho lateral : Sim | Luz de Led : Sim | Peso : 1,9 Kg | Acompanha : Bateria 5,0 Ah, carregador e maleta",
-    image: [dewaltDcd1007_5ah, dewaltSpecs],
-  },
-  {
-    id: "dewalt-dcd1007-powerpack",
-    name: "Parafusadeira / Furadeira de Impacto DCD1007 20V XR Powerpack",
-    brand: "DeWalt",
-    category: "Ferramentas",
-    description:
-      "Tensão : 20V MAX XR | Torque max : 90 Nm | Mandril : 13 mm (1/2\") de aperto rápido | Motor : Brushless | Vel. : 3 | Vel. sem carga : 0-450 \\ 0-1.300 \\ 0-2.000 RPM | Impacto : Sim | Máx. madeira : 40 mm | Máx. aço : 13 mm | Máx. alvenaria : 16 mm | Luz de Led : Sim | Peso : 1,9 Kg | Carregador : 220V | Versão : Powerpack (bateria Power Stack)",
-    image: [dewaltDcd1007Powerpack, dewaltSpecs],
+      "Possui controle eletrônico preciso de velocidade variável e mantém a rotação constante para aplicação em diversos processos de polimento.",
+    image: [lixadeira, lixadeira1],
   },
   {
     id: "dewalt-dcd777-2ah",
-    name: "Parafusadeira / Furadeira 20V de Impacto MAX Brushless com Bateria 2Ah",
+    name: "Parafusadeira / Furadeira 20V de Impacto MAX Brushless com Bateria",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Torque max : 65 | pos. de torque : 22 | Vel. : 2 | Luz de Led : Sim | Peso : 2,3 Kg | Máx. Madeira : 38 mm | Máx. aço : 13mm | Máx. Alvenaria : 13 mm",
-    image: [dewaltDcd777, dewaltSpecs],
+      "ferramenta perfeita para todos os seus projetos de bricolagem.",
+    image: [dewaltDcd777, parafusadeira4],
   },
   {
     id: "dewalt-dcf512b",
@@ -278,8 +295,8 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX | Torque max : 81 Nm | Encaixe : 1/2\" | Vel. sem carga : 250 RPM | Motor : Brushless | Reversão : Sim | Luz de Led : Sim | Comprimento : 28 cm (acesso a locais estreitos) | Peso : 1,3 Kg | Bateria : Não inclusa | Uso : Mecânica automotiva e manutenção industrial",
-    image: [dewaltDcf512b, dewaltSpecs],
+      "Cabeça compacta para espaços reduzidos com motor Brushless",
+    image: [dewaltDcf512b, catraca],
   },
   {
     id: "dewalt-furadeira-fio-13mm",
@@ -287,20 +304,84 @@ export const PRODUCTS: Product[] = [
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tipo : Com fio | Tensão : 220V | Potência : 710W | Mandril : 13 mm (1/2\") de coroa com chave | Vel. sem carga : 0-2.800 RPM | Vel. variável : Sim (gatilho) | Reversão : Sim | Máx. madeira : 25 mm | Máx. aço : 13 mm | Punho lateral : 360° | Cabo : 2 m | Peso : 2,2 Kg",
-    image: [dewaltFuradeiraFio, dewaltSpecs],
+      "Furadeira elétrica robusta com mandril de coroa 13mm, velocidade variável, reversão e punho auxiliar para maior controle.",
+    image: [dewaltFuradeiraFio, furadeira1],
   },
   {
     id: "dewalt-drywall-xr",
-    name: "Parafusadeira Drywall 20V XR com Bateria 5Ah",
+    name: "Parafusadeira Drywall 20V XR",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Tensão : 20V MAX XR | Vel. sem carga : 0-4.400 RPM | Motor : Brushless | Encaixe : 1/4\" hexagonal | Embreagem : Silenciosa com desligamento automático | Bico limitador de profundidade : Ajustável e removível | Reversão : Sim | Luz de Led : Sim | Gancho de cinto : Sim | Peso : 1,5 Kg | Acompanha : Bateria 5,0 Ah, carregador e maleta | Uso : Gesso acartonado e steel frame",
-    image: [dewaltDrywall, dewaltSpecs],
+      "Parafusadeira para gesso acartonado com bico limitador de profundidade, motor brushless e alta autonomia. Acompanha bateria XR.",
+    image: [dewaltDrywall, parafusadeira5],
   },
 
 
+  // Makita
+  {
+    id: "makita-esmerilhadeira",
+    name: "Esmerilhadeira Angular 7\"",
+    brand: "Makita",
+    category: "Ferramentas",
+    description:
+      "Potência : 2.200W | Tensão : 220V | Disco : 7\" (180 mm) | Rosca do eixo : M14 | Vel. sem carga : 8.500 RPM | Partida suave : Sim | Trava do eixo : Sim | Punho lateral : 3 posições | Protetor de disco : Ajustável | Cabo : 2,5 m | Peso : 5,1 Kg | Uso : Corte e desbaste em metal e concreto",
+    image: p4,
+  },
+  {
+    id: "makita-furadeira",
+    name: "Furadeira de Impacto com Fio 1/2\"",
+    brand: "Makita",
+    category: "Ferramentas",
+    description:
+      "Tipo : Com fio | Tensão : 220V | Potência : 710W | Mandril : 13 mm (1/2\") de coroa | Vel. sem carga : 0-2.800 RPM | Impactos : até 44.800 BPM | Vel. variável : Sim | Reversão : Sim | Máx. madeira : 25 mm | Máx. aço : 13 mm | Máx. alvenaria : 16 mm | Punho auxiliar : 360° com limitador | Peso : 2,1 Kg",
+    image: p5,
+  },
+  {
+    id: "makita-serra-marmore",
+    name: "Serra Mármore 110mm 1200W",
+    brand: "Makita",
+    category: "Ferramentas",
+    description:
+      "Potência : 1.200W | Tensão : 220V | Disco : 110 mm | Furo do disco : 20 mm | Vel. sem carga : 13.000 RPM | Prof. de corte : 34 mm | Base : Alumínio com ajuste de profundidade | Refrigeração : Saída para água | Disco diamantado : Incluso | Cabo : 2,5 m | Peso : 3,1 Kg | Uso : Porcelanato, mármore e granito",
+    image: p6,
+  },
+  {
+    id: "makita-serra-circular",
+    name: "Serra Circular 7.1/4 1.600w Makita",
+    brand: "Makita",
+    category: "Ferramentas",
+    description:
+      "Ideal para setores de construção e marcenaria, esta serra suporta o trabalho pesado diário com uma capacidade de corte impressionante de até 67mm de profundidade.",
+    image: mserra,
+  },
+  {
+    id: "makita-soprador-dub186",
+    name: "Soprador de Folhas a Bateria 18V DUB186",
+    brand: "Makita",
+    category: "Ferramentas",
+    description:
+      "Tensão : 18V LXT | Vazão de ar : 2,6 m³/min | Velocidade do ar : até 54 m/s | Vel. : 3 | Autonomia : até 40 min (3,0 Ah) | Bico : Removível | Peso : 1,7 Kg (com bateria) | Acompanha : Bateria 3,0 Ah, carregador e bico | Uso : Pátios, jardins e oficinas",
+    image: makitaSoprador,
+  },
+  {
+    id: "makita-rompedor-sds-max",
+    name: "Rompedor / Martelete Makita com Maleta",
+    brand: "Makita",
+    category: "Ferramentas",
+    description:
+      "Tipo : Elétrico com fio | Tensão : 220V | Potência : 1.500W | Encaixe : SDS | Energia de impacto : 20 J | Impactos : até 1.900 BPM | Controle de vibração : Sim | Punho auxiliar : Ajustável 360° | Acompanha : Ponteiro, talhadeira, graxa e maleta | Peso : 10 Kg | Uso : Demolição de concreto e alvenaria",
+    image: makitaRompedor,
+  },
+  {
+    id: "makita-soprador-m4000g",
+    name: "Soprador de Ar M4000G 530W 220V",
+    brand: "Makita",
+    category: "Ferramentas",
+    description:
+      "Potência : 530W | Tensão : 220V | Vazão de ar : 2,3 m³/min | Velocidade do ar : até 90 m/s | Vel. variável : Sim | Bico direcionador : Removível | Cabo : 2 m | Peso : 1,5 Kg | Uso : Limpeza de bancadas, máquinas e painéis elétricos",
+    image: makitaM4000g,
+  },
 
   // Elgin
   {
@@ -314,6 +395,15 @@ export const PRODUCTS: Product[] = [
   },
 
   // Jacto
+  {
+    id: "jacto-j6000",
+    name: "Aspirador pó/água AJ32 220V",
+    brand: "Jacto",
+    category: "Ferramentas",
+    description:
+      "O AJ32 é o aspirador de pó e líquidos ideal para quem busca robustez, eficiência e praticidade nas mais diversas aplicações profissionais.",
+    image: aj32,
+  },
   {
     id: "jacto-j6000",
     name: "Lavadora de Alta Pressão J6000",
@@ -461,63 +551,6 @@ export const PRODUCTS: Product[] = [
     image: lorenzettiDuchaFashion,
   },
 
-  // Makita
-  {
-    id: "makita-esmerilhadeira",
-    name: "Esmerilhadeira Angular 7\"",
-    brand: "Makita",
-    category: "Ferramentas",
-    description:
-      "Potência : 2.200W | Tensão : 220V | Disco : 7\" (180 mm) | Rosca do eixo : M14 | Vel. sem carga : 8.500 RPM | Partida suave : Sim | Trava do eixo : Sim | Punho lateral : 3 posições | Protetor de disco : Ajustável | Cabo : 2,5 m | Peso : 5,1 Kg | Uso : Corte e desbaste em metal e concreto",
-    image: p4,
-  },
-  {
-    id: "makita-furadeira",
-    name: "Furadeira de Impacto com Fio 1/2\"",
-    brand: "Makita",
-    category: "Ferramentas",
-    description:
-      "Tipo : Com fio | Tensão : 220V | Potência : 710W | Mandril : 13 mm (1/2\") de coroa | Vel. sem carga : 0-2.800 RPM | Impactos : até 44.800 BPM | Vel. variável : Sim | Reversão : Sim | Máx. madeira : 25 mm | Máx. aço : 13 mm | Máx. alvenaria : 16 mm | Punho auxiliar : 360° com limitador | Peso : 2,1 Kg",
-    image: p5,
-  },
-  {
-    id: "makita-serra-marmore",
-    name: "Serra Mármore 110mm 1200W",
-    brand: "Makita",
-    category: "Ferramentas",
-    description:
-      "Potência : 1.200W | Tensão : 220V | Disco : 110 mm | Furo do disco : 20 mm | Vel. sem carga : 13.000 RPM | Prof. de corte : 34 mm | Base : Alumínio com ajuste de profundidade | Refrigeração : Saída para água | Disco diamantado : Incluso | Cabo : 2,5 m | Peso : 3,1 Kg | Uso : Porcelanato, mármore e granito",
-    image: p6,
-  },
-  {
-    id: "makita-soprador-dub186",
-    name: "Soprador de Folhas a Bateria 18V DUB186",
-    brand: "Makita",
-    category: "Ferramentas",
-    description:
-      "Tensão : 18V LXT | Vazão de ar : 2,6 m³/min | Velocidade do ar : até 54 m/s | Vel. : 3 | Autonomia : até 40 min (3,0 Ah) | Bico : Removível | Peso : 1,7 Kg (com bateria) | Acompanha : Bateria 3,0 Ah, carregador e bico | Uso : Pátios, jardins e oficinas",
-    image: makitaSoprador,
-  },
-  {
-    id: "makita-rompedor-sds-max",
-    name: "Rompedor / Martelete Makita com Maleta",
-    brand: "Makita",
-    category: "Ferramentas",
-    description:
-      "Tipo : Elétrico com fio | Tensão : 220V | Potência : 1.500W | Encaixe : SDS | Energia de impacto : 20 J | Impactos : até 1.900 BPM | Controle de vibração : Sim | Punho auxiliar : Ajustável 360° | Acompanha : Ponteiro, talhadeira, graxa e maleta | Peso : 10 Kg | Uso : Demolição de concreto e alvenaria",
-    image: makitaRompedor,
-  },
-  {
-    id: "makita-soprador-m4000g",
-    name: "Soprador de Ar M4000G 530W 220V",
-    brand: "Makita",
-    category: "Ferramentas",
-    description:
-      "Potência : 530W | Tensão : 220V | Vazão de ar : 2,3 m³/min | Velocidade do ar : até 90 m/s | Vel. variável : Sim | Bico direcionador : Removível | Cabo : 2 m | Peso : 1,5 Kg | Uso : Limpeza de bancadas, máquinas e painéis elétricos",
-    image: makitaM4000g,
-  },
-
-
   // Nigro
   {
     id: "nigro-panela-pressao",
@@ -530,12 +563,21 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "nigro-eterna-45",
-    name: "Panela de Pressão Eterna 4,5L Vermelha",
+    name: "Panela de Pressão Eterna 3L Preta",
     brand: "Nigro",
     category: "Outros",
     description:
-      "Panela de pressão Nigro Eterna 4,5L com acabamento colorido, tampa em alumínio e sistema de segurança.",
-    image: nigroEterna45,
+      "Panela de pressão Nigro Eterna 3L , tampa em alumínio e sistema de segurança.",
+    image: nigropequena,
+  },
+  {
+    id: "nigro-20litro",
+    name: "Panela de Pressão Eterna 20 Litros",
+    brand: "Nigro",
+    category: "Outros",
+    description:
+      "Seja uma cozinha doméstica ou industrial é possível preparar uma grande quantidade de comida com praticidade",
+    image: nigro20,
   },
   {
     id: "nigro-eterna-60",
@@ -551,7 +593,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "roa-fogao-industrial-2-bocas",
     name: "Fogão Industrial  2  Bocas ",
-    brand: "Roa",
+    brand: "Outros",
     category: "Eletrodomésticos",
     description:
       "Fogão industrial de 2 bocas em chapa reforçada, com queimadores de alta pressão, bandejas removíveis e cavalete de apoio.",
