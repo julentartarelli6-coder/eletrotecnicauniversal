@@ -12,10 +12,8 @@ type Filter = "Todos" | ProductCategory;
 const FILTERS: Filter[] = ["Todos", ...CATEGORIES];
 
 function ProductCard({ product }: { product: Product }) {
-  const images =
-    product.brand.toLowerCase() === "dewalt"
-      ? [product.image, dewaltSpecs.url]
-      : [product.image];
+  const images = Array.isArray(product.image) ? product.image : [product.image];
+
   const [index, setIndex] = useState(0);
   const hasCarousel = images.length > 1;
 
