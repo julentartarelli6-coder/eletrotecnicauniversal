@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { ChevronLeft, ChevronRight, MessageCircle } from "lucide-react";
+import { useEffect, useState } from "react";
+import { ChevronLeft, ChevronRight, MessageCircle, X } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/site/section";
 import { Button } from "@/components/ui/button";
 import { PRODUCTS, CATEGORIES, type Product, type ProductCategory } from "@/data/products";
@@ -10,10 +10,92 @@ type Filter = "Todos" | ProductCategory;
 
 const FILTERS: Filter[] = ["Todos", ...CATEGORIES];
 
+function Lightbox({
+  images,
+  index,
+  alt,
+  onClose,
+  onNav,
+}: {
+  images: string[];
+  index: number;
+  alt: string;
+  onClose: () => void;
+  onNav: (dir: number) => void;
+}) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+      if (e.key === "ArrowLeft") onNav(-1);
+      if (e.key === "ArrowRight") onNav(1);
+    };
+    window.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [onClose, onNav]);
+
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label={alt}
+      onClick={onClose}
+      className="fixed inset-0 z-100 flex items-center justify-center bg-navy-deep/90 p-4 backdrop-blur-sm"
+    >
+      <button
+        type="button"
+        onClick={onClose}
+        aria-label="Fechar zoom"
+        className="absolute right-4 top-4 rounded-full bg-card/95 p-2.5 text-navy shadow-lift transition-colors hover:bg-brand-red hover:text-brand-red-foreground"
+      >
+        <X className="size-6" aria-hidden="true" />
+      </button>
+
+      {images.length > 1 && (
+        <>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              onNav(-1);
+            }}
+            aria-label="Foto anterior"
+            className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-card/95 p-3 text-navy shadow-lift transition-colors hover:bg-brand-red hover:text-brand-red-foreground sm:left-8"
+          >
+            <ChevronLeft className="size-6" aria-hidden="true" />
+          </button>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              onNav(1);
+            }}
+            aria-label="Próxima foto"
+            className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-card/95 p-3 text-navy shadow-lift transition-colors hover:bg-brand-red hover:text-brand-red-foreground sm:right-8"
+          >
+            <ChevronRight className="size-6" aria-hidden="true" />
+          </button>
+        </>
+      )}
+
+      <img
+        src={images[index]}
+        alt={alt}
+        onClick={(e) => e.stopPropagation()}
+        className="max-h-[85vh] max-w-[90vw] rounded-xl bg-card object-contain p-4 shadow-lift"
+      />
+    </div>
+  );
+}
+
 function ProductCard({ product }: { product: Product }) {
   const images = Array.isArray(product.image) ? product.image : [product.image];
 
   const [index, setIndex] = useState(0);
+  const [zoom, setZoom] = useState(false);
   const hasCarousel = images.length > 1;
 
   const go = (dir: number) => setIndex((i) => (i + dir + images.length) % images.length);
@@ -26,8 +108,19 @@ function ProductCard({ product }: { product: Product }) {
           alt={`${product.name} — ${product.brand}`}
           loading="lazy"
           decoding="async"
-          className="h-full w-full object-contain p-4 transition-transform duration-500 group-hover:scale-105"
+          onClick={() => setZoom(true)}
+          className="h-full w-full cursor-zoom-in object-contain p-4 transition-transform duration-500 group-hover:scale-105"
         />
+        {zoom && (
+          <Lightbox
+            images={images}
+            index={index}
+            alt={`${product.name} — ${product.brand}`}
+            onClose={() => setZoom(false)}
+            onNav={go}
+          />
+        )}
+
         <span className="absolute left-3 top-3 rounded-full bg-navy/90 px-3 py-1 text-[0.68rem] font-bold uppercase tracking-widest text-navy-foreground backdrop-blur">
           {product.category}
         </span>
