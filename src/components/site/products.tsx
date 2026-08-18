@@ -86,7 +86,7 @@ function Lightbox({
         src={images[index]}
         alt={alt}
         onClick={(e) => e.stopPropagation()}
-        className="h-screen w-screen object-contain p-4"
+        className="h-screen w-screen object-contain p-0"
       />
     </div>
   );
