@@ -81,11 +81,6 @@ import mserra from "@/assets/mserra.png";
 import nigro20 from "@/assets/nigro20.png";
 
 
-
-
-/** Segunda foto usada nos carrosséis dos produtos DeWalt */
-const dewaltSpecs = dewaltSpecsAsset.url;
-
 export type ProductCategory = "Ferramentas" | "Eletrodomésticos" | "Outros";
 
 export interface Product {
