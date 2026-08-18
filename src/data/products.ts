@@ -394,7 +394,7 @@ export const PRODUCTS: Product[] = [
     id: "jacto-j6000",
     name: "Aspirador pó/água AJ32 220V",
     brand: "Jacto",
-    category: "Ferramentas",
+    category: "Eletrodomésticos",
     description:
       "O AJ32 é o aspirador de pó e líquidos ideal para quem busca robustez, eficiência e praticidade nas mais diversas aplicações profissionais.",
     image: aj32,
@@ -403,7 +403,7 @@ export const PRODUCTS: Product[] = [
     id: "jacto-j6000",
     name: "Lavadora de Alta Pressão J6000",
     brand: "Jacto",
-    category: "Ferramentas",
+    category: "Eletrodomésticos",
     description:
       "Pressão : 1.600 psi | Vazão : 380 L/h | Potência : 1.500W | Tensão : 127V ou 220V | Motor : Universal com bomba de 3 pistões | Mangueira : 5 m | Bico : Regulável (leque e concentrado) | Reservatório de detergente : Sim | Carrinho : Sim com alça retrátil | Peso : 8 Kg | Uso : Veículos, calçadas e fachadas",
     image: jactoJ7000,
@@ -412,7 +412,7 @@ export const PRODUCTS: Product[] = [
     id: "jacto-j6800",
     name: "Lavadora de Alta Pressão J6800",
     brand: "Jacto",
-    category: "Ferramentas",
+    category: "Eletrodomésticos",
     description:
       "Pressão : 1.800 psi | Vazão : 400 L/h | Potência : 1.600W | Tensão : 127V ou 220V | Mangueira : 5 m com enrolador | Stop Total : Sim | Bico : Regulável | Aplicador de detergente : Sim | Filtro de entrada : Sim | Peso : 9 Kg | Uso : Doméstico e profissional leve",
     image: jactoJ6800,
@@ -421,7 +421,7 @@ export const PRODUCTS: Product[] = [
     id: "jacto-j7000-plus",
     name: "Lavadora de Alta Pressão J7000 Plus",
     brand: "Jacto",
-    category: "Ferramentas",
+    category: "Eletrodomésticos",
     description:
       "Pressão : 2.000 psi | Vazão : 420 L/h | Potência : 1.800W | Tensão : 127V ou 220V | Mangueira : Reforçada 6 m | Stop Total : Sim | Bico : Turbo + regulável | Reservatório de detergente : Sim | Enrolador de mangueira : Sim | Peso : 10 Kg | Uso : Limpeza pesada e uso frequente",
     image: jactoJ7000Plus,
@@ -430,7 +430,7 @@ export const PRODUCTS: Product[] = [
     id: "jacto-j7-pro-s",
     name: "Lavadora de Alta Pressão J7 Pro-S",
     brand: "Jacto",
-    category: "Ferramentas",
+    category: "Eletrodomésticos",
     description:
       "Pressão : 2.200 psi | Vazão : 450 L/h | Potência : 2.000W | Tensão : 127V ou 220V | Mangueira : Reforçada 8 m | Stop Total : Sim | Pistola : Ergonômica com trava | Bicos : Turbo e leque regulável | Carrinho : Com rodas e alça | Peso : 12 Kg | Uso : Profissional intenso",
     image: jactoJ7Pro,
@@ -588,8 +588,8 @@ export const PRODUCTS: Product[] = [
   {
     id: "roa-fogao-industrial-2-bocas",
     name: "Fogão Industrial  2  Bocas ",
-    brand: "Outros",
-    category: "Eletrodomésticos",
+    brand: "Roa",
+    category: "Outros",
     description:
       "Fogão industrial de 2 bocas em chapa reforçada, com queimadores de alta pressão, bandejas removíveis e cavalete de apoio.",
     image: roaFogaoIndustrial,
