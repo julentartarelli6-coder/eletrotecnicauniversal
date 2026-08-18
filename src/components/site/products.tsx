@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { ChevronLeft, ChevronRight, MessageCircle, X } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/site/section";
 import { Button } from "@/components/ui/button";
@@ -37,19 +38,19 @@ function Lightbox({
     };
   }, [onClose, onNav]);
 
-  return (
+  const content = (
     <div
       role="dialog"
       aria-modal="true"
       aria-label={alt}
       onClick={onClose}
-      className="fixed inset-0 z-100 flex items-center justify-center bg-navy-deep/90 p-4 backdrop-blur-sm"
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-navy-deep/95 p-0 backdrop-blur-md"
     >
       <button
         type="button"
         onClick={onClose}
         aria-label="Fechar zoom"
-        className="absolute right-4 top-4 rounded-full bg-card/95 p-2.5 text-navy shadow-lift transition-colors hover:bg-brand-red hover:text-brand-red-foreground"
+        className="absolute right-4 top-4 z-10 rounded-full bg-card/95 p-2.5 text-navy shadow-lift transition-colors hover:bg-brand-red hover:text-brand-red-foreground"
       >
         <X className="size-6" aria-hidden="true" />
       </button>
@@ -63,7 +64,7 @@ function Lightbox({
               onNav(-1);
             }}
             aria-label="Foto anterior"
-            className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-card/95 p-3 text-navy shadow-lift transition-colors hover:bg-brand-red hover:text-brand-red-foreground sm:left-8"
+            className="absolute left-3 top-1/2 z-10 -translate-y-1/2 rounded-full bg-card/95 p-3 text-navy shadow-lift transition-colors hover:bg-brand-red hover:text-brand-red-foreground sm:left-8"
           >
             <ChevronLeft className="size-6" aria-hidden="true" />
           </button>
@@ -74,7 +75,7 @@ function Lightbox({
               onNav(1);
             }}
             aria-label="Próxima foto"
-            className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-card/95 p-3 text-navy shadow-lift transition-colors hover:bg-brand-red hover:text-brand-red-foreground sm:right-8"
+            className="absolute right-3 top-1/2 z-10 -translate-y-1/2 rounded-full bg-card/95 p-3 text-navy shadow-lift transition-colors hover:bg-brand-red hover:text-brand-red-foreground sm:right-8"
           >
             <ChevronRight className="size-6" aria-hidden="true" />
           </button>
@@ -85,10 +86,12 @@ function Lightbox({
         src={images[index]}
         alt={alt}
         onClick={(e) => e.stopPropagation()}
-        className="max-h-[85vh] max-w-[90vw] rounded-xl bg-card object-contain p-4 shadow-lift"
+        className="h-screen w-screen object-contain p-0"
       />
     </div>
   );
+
+  return typeof document !== "undefined" ? createPortal(content, document.body) : null;
 }
 
 function ProductCard({ product }: { product: Product }) {
