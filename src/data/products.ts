@@ -55,7 +55,7 @@ import lorenzettiMaxiBanhoUltra from "@/assets/lorenzetti6.png";
 import lorenzettiTradicao from "@/assets/lorenzetti7.png";
 import lorenzettiAcquaStorm from "@/assets/lorenzetti8.png";
 import lorenzettiDuchaFashion from "@/assets/lorenzetti9.png";
-import dewaltSpecs from "@/assets/1007.png";
+import dewaltpinto from "@/assets/pinto.png";
 import moto from "@/assets/moto.png";
 import moto1 from "@/assets/moto1.png";
 import trena1 from "@/assets/trena1.png";
@@ -143,7 +143,7 @@ export const PRODUCTS: Product[] = [
     category: "Ferramentas",
     description:
       "Linha XR e bateria 20V MAX de alta durabilidade.",
-    image: [dewaltDcd1007_5ah, dewaltSpecs],
+    image: [dewaltDcd1007_5ah, dewaltpinto],
   },
   {
     id: "dewalt-esmerilhadeira-7",
