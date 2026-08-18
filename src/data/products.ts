@@ -391,7 +391,7 @@ export const PRODUCTS: Product[] = [
 
   // Jacto
   {
-    id: "jacto-j6000",
+    id: "jacto-AJ32",
     name: "Aspirador pó/água AJ32 220V",
     brand: "Jacto",
     category: "Eletrodomésticos",
