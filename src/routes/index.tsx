@@ -11,6 +11,7 @@ import { Faq } from "@/components/site/faq";
 import { Contact } from "@/components/site/contact";
 import { Footer } from "@/components/site/footer";
 import { FloatingActions } from "@/components/site/floating-actions";
+import { SectionErrorBoundary } from "@/components/site/error-boundary";
 
 const TITLE = "Eletrotécnica Universal";
 const DESCRIPTION =
