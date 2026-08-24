@@ -124,6 +124,12 @@ function RootShell({ children }: { children: ReactNode }) {
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
+  // Marca que o React montou. O CSS só aplica as animações de entrada com esta
+  // classe presente, então uma falha de JS nunca deixa a página em branco.
+  useEffect(() => {
+    document.documentElement.classList.add("js");
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
