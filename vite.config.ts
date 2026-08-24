@@ -12,4 +12,12 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    build: {
+      // Alvo mais amplo: cobre Chrome/Edge um pouco mais antigos (Windows 10)
+      // sem afetar navegadores modernos.
+      target: ["chrome100", "edge100", "firefox100", "safari15.4"],
+      cssTarget: ["chrome100", "edge100", "firefox100", "safari15.4"],
+    },
+  },
 });

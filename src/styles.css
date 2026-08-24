@@ -206,16 +206,21 @@ a[href*="lovable.dev"][target="_blank"][class*="badge"] {
   }
 }
 
+/*
+ * A animação de entrada só esconde o conteúdo quando o JS está ativo e montado
+ * (classe .js no <html>). Se o React não montar, tudo permanece visível em vez
+ * de a página ficar em branco.
+ */
 @utility reveal {
-  opacity: 0;
-  transform: translateY(24px);
+  opacity: 1;
+  transform: none;
   transition:
     opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
     transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
 
-  &[data-visible="true"] {
-    opacity: 1;
-    transform: none;
+  .js &[data-visible="false"] {
+    opacity: 0;
+    transform: translateY(24px);
   }
 }
 

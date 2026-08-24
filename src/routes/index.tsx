@@ -11,6 +11,7 @@ import { Faq } from "@/components/site/faq";
 import { Contact } from "@/components/site/contact";
 import { Footer } from "@/components/site/footer";
 import { FloatingActions } from "@/components/site/floating-actions";
+import { SectionErrorBoundary } from "@/components/site/error-boundary";
 
 const TITLE = "Eletrotécnica Universal";
 const DESCRIPTION =
@@ -63,22 +64,34 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const sections = [
+    ["hero", <Hero key="hero" />],
+    ["products", <Products key="products" />],
+    ["brands", <Brands key="brands" />],
+    ["services", <Services key="services" />],
+    ["about", <About key="about" />],
+    ["differentials", <Differentials key="differentials" />],
+    ["reviews", <Reviews key="reviews" />],
+    ["faq", <Faq key="faq" />],
+    ["contact", <Contact key="contact" />],
+  ] as const;
+
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      <SectionErrorBoundary fallback={null}>
+        <Navbar />
+      </SectionErrorBoundary>
       <main>
-        <Hero />
-        <Products />
-        <Brands />
-        <Services />
-        <About />
-        <Differentials />
-        <Reviews />
-        <Faq />
-        <Contact />
+        {sections.map(([id, node]) => (
+          <SectionErrorBoundary key={id}>{node}</SectionErrorBoundary>
+        ))}
       </main>
-      <Footer />
-      <FloatingActions />
+      <SectionErrorBoundary fallback={null}>
+        <Footer />
+      </SectionErrorBoundary>
+      <SectionErrorBoundary fallback={null}>
+        <FloatingActions />
+      </SectionErrorBoundary>
     </div>
   );
 }
