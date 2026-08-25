@@ -22,7 +22,7 @@ export function Hero() {
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-[linear-gradient(105deg,var(--navy-deep)_18%,color-mix(in_oklab,var(--navy)_82%,transparent)_58%,transparent_100%)]"
+        className="absolute inset-0 -z-10 bg-[linear-gradient(105deg,var(--navy-deep)_18%,hsl(220_88%_20%/0.82)_58%,transparent_100%)]"
       />
 
       <div className="mx-auto max-w-7xl px-4 pb-20 pt-32 sm:px-6 sm:pb-28 sm:pt-40 lg:px-8 lg:pb-36 lg:pt-48">

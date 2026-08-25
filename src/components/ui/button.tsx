@@ -18,7 +18,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-brand-red text-brand-red-foreground font-semibold shadow-[var(--shadow-red)] transition-all duration-300 hover:brightness-110 hover:-translate-y-0.5",
         whats:
-          "bg-whats text-navy-foreground font-semibold shadow-[0_16px_36px_-18px_oklch(0.62_0.16_152/0.8)] transition-all duration-300 hover:brightness-110 hover:-translate-y-0.5",
+          "bg-whats text-navy-foreground font-semibold shadow-[0_16px_36px_-18px_hsl(148_84%_34%/0.8)] transition-all duration-300 hover:brightness-110 hover:-translate-y-0.5",
         navy: "bg-navy text-navy-foreground font-semibold transition-all duration-300 hover:bg-navy-deep hover:-translate-y-0.5",
         glass:
           "border border-navy-foreground/30 bg-navy-foreground/10 text-navy-foreground font-semibold backdrop-blur-md transition-all duration-300 hover:bg-navy-foreground/20 hover:-translate-y-0.5",

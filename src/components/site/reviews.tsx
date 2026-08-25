@@ -13,7 +13,7 @@ function Stars({ className = "size-4" }: { className?: string }) {
   return (
     <span className="flex gap-0.5" aria-hidden="true">
       {Array.from({ length: 5 }).map((_, i) => (
-        <Star key={i} className={`${className} fill-amber-400 text-amber-400`} />
+        <Star key={i} className={`${className} fill-[#fbbf24] text-[#fbbf24]`} />
       ))}
     </span>
   );
