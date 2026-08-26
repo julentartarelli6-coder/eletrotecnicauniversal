@@ -86,7 +86,7 @@ function Lightbox({
         src={images[index]}
         alt={alt}
         onClick={(e) => e.stopPropagation()}
-        className="h-screen w-screen object-contain p-0"
+        className="h-[80vh] w-[80vw] object-contain p-0"
       />
     </div>
   );
@@ -161,17 +161,21 @@ function ProductCard({ product }: { product: Product }) {
         )}
       </div>
 
-      <div className="flex flex-1 flex-col p-5">
-        <p className="text-xs font-bold uppercase tracking-widest text-brand-red">
+      <div className="flex flex-1 flex-col p-3 sm:p-5">
+        <p className="text-[0.65rem] font-bold uppercase tracking-widest text-brand-red sm:text-xs">
           {product.brand}
         </p>
-        <h3 className="mt-2 text-base font-bold leading-snug text-navy">{product.name}</h3>
-        <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+        <h3 className="mt-2 text-sm font-bold leading-snug text-navy sm:text-base">
+          {product.name}
+        </h3>
+        <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground sm:text-sm">
           {product.description}
         </p>
-        <p className="mt-4 font-display text-lg font-extrabold text-navy">
+        <p className="mt-4 font-display text-base font-extrabold text-navy sm:text-lg">
           {product.price ?? (
-            <span className="text-sm font-semibold text-muted-foreground">Consulte o valor</span>
+            <span className="text-xs font-semibold text-muted-foreground sm:text-sm">
+              Consulte o valor
+            </span>
           )}
         </p>
         <Button asChild variant="whats" size="default" className="mt-4 w-full">
@@ -222,7 +226,7 @@ export function Products() {
           ))}
         </div>
 
-        <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-10 grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-3">
           {filtered.map((product, i) => (
             <Reveal as="li" key={product.id} delay={(i % 3) * 90}>
               <ProductCard product={product} />
