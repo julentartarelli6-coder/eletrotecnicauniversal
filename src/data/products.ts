@@ -305,7 +305,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "dewalt-trena-8m",
-    name: "Trena DeWalt 8m | 26\",
+    name: "Trena DeWalt 8m | 26",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
