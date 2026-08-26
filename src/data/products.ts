@@ -5,7 +5,6 @@ import p5 from "@/assets/makita2.png";
 import p6 from "@/assets/makita3.png";
 import p7 from "@/assets/lorenzetti1.png";
 import p8 from "@/assets/elgin.png";
-import boschGo from "@/assets/bosch.png";
 import dewaltEsmerilhadeira from "@/assets/esmerilhadeira.png";
 import esmerilhadeira1 from "@/assets/esmerilhadeira1.png";
 import dewaltSoprador from "@/assets/soprador.png";
@@ -23,7 +22,6 @@ import dewaltTrena from "@/assets/trena.png";
 import dewaltCanivete from "@/assets/canivete.png";
 import dewaltDwht66719 from "@/assets/parafusadeira.png";
 import dewaltDcf922 from "@/assets/chaveimpacto.png";
-import dewaltSerraCircular from "@/assets/serra.png";
 import dewaltDcb203 from "@/assets/bateria.png";
 import dewaltDccs623b from "@/assets/eletroserra.png";
 import dewaltLanterna from "@/assets/lanterna.png";
@@ -62,7 +60,6 @@ import trena1 from "@/assets/trena1.png";
 import canivete from "@/assets/canivete1.png";
 import parafusadeira1 from "@/assets/parafusadeira1.png";
 import chave1 from "@/assets/chave1.png";
-import serra1 from "@/assets/serra1.png";
 import bateria1 from "@/assets/bateria1.png";
 import eletroserra1 from "@/assets/eletroserra1.png";
 import lanterna1 from "@/assets/lanterna1.png";
@@ -79,6 +76,61 @@ import parafusadeira5 from "@/assets/parafusadeira5.png";
 import aj32 from "@/assets/aj32.png";
 import mserra from "@/assets/mserra.png";
 import nigro20 from "@/assets/nigro20.png";
+import esmerilhadeira950 from "@/assets/esmerilhadeira950.png";
+import esmerilhadeirad2 from "@/assets/esmerilhadeirad2.png";
+import esmerilhadeira750 from "@/assets/esmerilhadeira750.png";
+import esmerilhadeirad3 from "@/assets/esmerilhadeirad3.png";
+import eletrop from "@/assets/eletrop.png";
+import eletrop1 from "@/assets/eletrop1.png";
+import dwd from "@/assets/dwd.png";
+import dwd1 from "@/assets/dwd1.png";
+import dcg from "@/assets/dcg.png";
+import dcg1 from "@/assets/dcg1.png";
+import dw from "@/assets/dw.png";
+import dw1 from "@/assets/dw1.png";
+import dwe from "@/assets/dwe.png";
+import dwe1 from "@/assets/dwe1.png";
+import dwe6421 from "@/assets/dwe6421.png";
+import d6421 from "@/assets/d6421.png";
+import dwe64 from "@/assets/dwe64.png";
+import dwe6411 from "@/assets/dwe6411.png";
+import d26414 from "@/assets/d26414.png";
+import d264 from "@/assets/d264.png";
+import stanley1 from "@/assets/stanley1.png";
+import DCF850B from "@/assets/DCF850B.png";
+import DCF850 from "@/assets/DCF850.png";
+import dcd from "@/assets/dcd.png";
+import dcd1 from "@/assets/dcd1.png";
+import DCD7781B from "@/assets/DCD7781B.png";
+import DCD7781 from "@/assets/DCD7781.png";
+import DCD796D2 from "@/assets/DCD796D2.png";
+import DCD796D from "@/assets/DCD796D.png";
+import DCB120 from "@/assets/DCB120.png";
+import DCB12 from "@/assets/DCB12.png";
+import DCBP520 from "@/assets/DCBP520.png";
+import DCBP52 from "@/assets/DCBP52.png";
+import DCBP034 from "@/assets/DCBP034.png";
+import DCBP03 from "@/assets/DCBP03.png";
+import DCBP034E2 from "@/assets/DCBP034E2.png";
+import DCBP034E from "@/assets/DCBP034E.png";
+import DCD700C2 from "@/assets/DCD700C2.png";
+import DCD700C from "@/assets/DCD700C.png";
+import DWHT34192L from "@/assets/DWHT34192L.png";
+import DWHT34192 from "@/assets/DWHT34192.png";
+import DW065E from "@/assets/DW065E.png";
+import DW065 from "@/assets/DW065.png";
+import DCB205C2K from "@/assets/DCB205C2K.png";
+import DCB205C2 from "@/assets/DCB205C2.png";
+import DW088CGLA from "@/assets/DW088CG-LA.png";
+import DW088CG from "@/assets/DW088CG.png";
+import DWST83489LA from "@/assets/DWST83489LA.png";
+import DWST83489 from "@/assets/DWST83489.png";
+import stanley2 from "@/assets/stanley2.png";
+import stanley3 from "@/assets/stanley3.png";
+import black1 from "@/assets/black1.png";
+import black2 from "@/assets/black2.png";
+import black3 from "@/assets/black3.png";
+import black4 from "@/assets/black4.png";
 
 
 export type ProductCategory = "Ferramentas" | "Eletrodomésticos" | "Outros";
@@ -95,22 +147,7 @@ export interface Product {
   image: string | string[];
 }
 
-/**
- * Catálogo de produtos, organizado por marca.
- * Para adicionar um novo produto basta incluir um objeto nesta lista —
- * o layout do site se adapta automaticamente.
- */
 export const PRODUCTS: Product[] = [
-  // Bosch
-  {
-    id: "bosch-go",
-    name: "Parafusadeira Bosch GO 3,6V com Maleta",
-    brand: "Bosch",
-    category: "Ferramentas",
-    description:
-      "Tensão : 3,6V (bateria interna de lítio) | Torque max : 4,5 Nm | Pos. de torque : 5 + modo direto | Vel. sem carga : 360 RPM | Encaixe : 1/4\" hexagonal | Uso : Montagem de móveis e reparos domésticos",
-    image: boschGo,
-  },
 
   // DeWalt
   {
@@ -121,6 +158,33 @@ export const PRODUCTS: Product[] = [
     description:
       "Tensão : O Aparador de cerca viva a bateria da Dewalt é essencial para manter suas cercas vivas impecáveis e bem cuidadas. Este aparador não só garante eficiência, como também oferece conforto e segurança no uso prolongado",
     image: [moto, moto1],
+  },
+  {
+    id: "dewalt-dcd",
+    name: "PARAFUSADEIRA/FURADEIRA DE IMPACTO 1/2” (13 mm) 20V MAX* LI-ION BRUSHLESS 2 BATERIAS 2AH CARREGADOR BIVOLT E MALETA",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "parafusadeira | furadeira de impacto Motor Brushless",
+    image: [dcd, dcd1],
+  },
+  {
+    id: "dewalt-DCD796D2",
+    name: "PARAFUSADEIRA/FURADEIRA DE IMPACTO 1/2” (13 mm) 20V MAX* LI-ION BRUSHLESS 2 BATERIAS 2AH CARREGADOR BIVOLT E MALETA ",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "parafusadeira | furadeira de impacto Motor Brushless",
+    image: [DCD796D2, DCD796D],
+  },
+  {
+    id: "dewalt-dcd7781b",
+    name: "PARAFUSADEIRA/FURADEIRA DE IMPACTO 1/2” (13 mm) 20V MAX* LI-ION BRUSHLESS 2 BATERIAS 2AH CARREGADOR BIVOLT E MALETA",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "parafusadeira | furadeira de impacto com motor Brushless, 2 baterias de 2Ah, carregador bivolt e maleta.",
+    image: [DCD7781B, DCD7781],
   },
   {
     id: "dewalt-dcd796",
@@ -141,6 +205,42 @@ export const PRODUCTS: Product[] = [
     image: [dewaltDcd1007_5ah, dewaltpinto],
   },
   {
+    id: "dewalt-DCF850B",
+    name: "PARAFUSADEIRA DE IMPACTO COMPACTA 1/4’’ (6,35 mm) 20V MAX* LI-ION BRUSHLESS SEM BATERIA E SEM CARREGADOR",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Parafusadeira compacta com MOTOR BRUSHLESS.",
+    image: [DCF850B, DCF850],
+  },
+  {
+    id: "dewalt-esmerilhadeira-20V",
+    name: "ESMERILHADEIRA ANGULAR  4-1/2”- 5” (115-125 mm) 20V MAX* LI-ION BRUSHLESS SEM BATERIA E SEM CARREGADOR ",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "sem bateria e sem carregador . ",
+    image: [dcg, dcg1],
+  },
+  {
+    id: "dewalt-esmerilhadeira-950",
+    name: "ESMERILHADEIRA ANGULAR 4 1/2” (115MM) VV 950W",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Potência, resistência e desempenho profissional . ",
+    image: [esmerilhadeira950, esmerilhadeirad2],
+  },
+  {
+    id: "dewalt-esmerilhadeira-750",
+    name: "ESMERILHADEIRA 4 1/2” (115 mm) 750W ULTRA SLIM 220 V",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Compacta, potente e mais durável ",
+    image: [esmerilhadeira750, esmerilhadeirad3],
+  },
+  {
     id: "dewalt-esmerilhadeira-7",
     name: "Esmerilhadeira Angular 7\" 2.200W",
     brand: "DeWalt",
@@ -148,6 +248,24 @@ export const PRODUCTS: Product[] = [
     description:
       "Potência, resistência e desempenho profissional para aplicações pesadas. ",
     image: [dewaltEsmerilhadeira, esmerilhadeira1],
+  },
+  {
+    id: "dewalt-lixadeira-280w",
+    name: "LIXADEIRA ROTO ORBITAL DE 5” (125 mm) 280W",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "lixadeira auto aderente com 8 furos",
+    image: [dwe6421, d6421],
+  },
+  {
+    id: "dewalt-lixadeira-6411",
+    name: "LIXADEIRA ORBITAL 1/4” DE FOLHA 230W",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "lixadeira 1/4 de folha",
+    image: [dwe6411, dwe64],
   },
   {
     id: "dewalt-soprador",
@@ -159,13 +277,49 @@ export const PRODUCTS: Product[] = [
     image: [dewaltSoprador, soprador],
   },
   {
+    id: "dewalt-soprador-termico",
+    name: "SOPRADOR TÉRMICO 2.000W CONTROLE DIGITAL DE TEMPERATURA DISPLAY LCD",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "soprador térmico com controle digital de temperatura e display LCD",
+    image: [d26414, d264],
+  },
+  {
+    id: "dewalt-DW088CG-LA",
+    name: "NÍVELADOR LASER VERDE DEWALT",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Nívelador Laser Verde com tripé, alcance de até 50 metros.",
+    image: [DW088CGLA, DW088CG],
+  },
+  {
+    id: "dewalt-trena-DW065E",
+    name: "TRENA A LASER 20M",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "trena a laser com alcance de 20 metros, precisão de ± 1,5 mm e função de medição contínua. Ideal para medições rápidas e precisas em obras e projetos.",
+    image: [DW065E, DW065],
+  },
+  {
     id: "dewalt-trena-8m",
-    name: "Trena DeWalt 8m / 26\"",
+    name: "Trena DeWalt 8m | 26\",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
       "A Trena Dewalt é ideal para qualquer tipo de medição, seja em casa, no trabalho ou para profissionais.",
     image: [dewaltTrena, trena1],
+  },
+  {
+    id: "dewalt-trena-DWHT34192L",
+    name: "TRENA DUO 5M/16’ X 25 mm",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "trena de 5M e fita branca",
+    image: [DWHT34192L, DWHT34192],
   },
   {
     id: "dewalt-canivete-quickflip",
@@ -195,13 +349,49 @@ export const PRODUCTS: Product[] = [
     image: [dewaltDcf922, chave1],
   },
   {
-    id: "dewalt-serra-circular-20v",
-    name: "Serra Circular 20V XR Brushless 7.1/4\" 184mm",
+    id: "dewalt-serra-circular",
+    name: "SERRA CIRCULAR 7 1/4” (184 mm) 1.400W COM DISCO DE 18 DENTES",
     brand: "DeWalt",
     category: "Ferramentas",
     description:
-      "Serra circular a bateria com disco de 184mm e 24 dentes, freio elétrico e base ajustável para cortes em madeira.",
-    image: [dewaltSerraCircular, serra1],
+      "Serra circular com motor potente de 1400W, base ajustável e disco de 18 dentes para cortes precisos em madeira e MDF.",
+    image: [dwe, dwe1],
+  },
+  {
+    id: "dewalt-serra-14000w",
+    name: "SERRA MÁRMORE 4 3/8” (125 mm) 1.400W",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Serra mármore 1400 W",
+    image: [dw, dw1],
+  },
+  {
+    id: "dewalt-DCB120",
+    name: "BATERIA 12V MAX* LI-ION 1.3AH",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Bateria Li-on DCB120-B2",
+    image: [DCB120, DCB12],
+  },
+  {
+    id: "dewalt-DCBP520",
+    name: "BATERIA COMPACTA 20V MAX* XR LI-ION 5AH POWERSTACK",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "50% Mais potência e 50% mais eficiência por carga",
+    image: [DCBP520, DCBP52],
+  },
+  {
+    id: "dewalt-DCBP034",
+    name: "BATERIA COMPACTA 20V MAX* XR LI-ION 1,7AH POWERSTACK",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "50% Mais potência e 50% mais eficiência por carga",
+    image: [DCBP034, DCBP03],
   },
   {
     id: "dewalt-dcb203",
@@ -211,6 +401,24 @@ export const PRODUCTS: Product[] = [
     description:
       "Bateria compacta de íon-lítio 20V MAX com indicador de carga, compatível com toda a linha 20V da DeWalt.",
     image: [dewaltDcb203, bateria1],
+  },
+  {
+    id: "dewalt-DCBP034E2",
+    name: "KIT 2 BATERIAS  20V MAX* LI-ION  1,7AH POWERSTACK E CARREGADOR BIVOLT E BOLSA ",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Kit com 2 baterias compactas de íon-lítio 20V MAX e carregador bivolt. ",
+    image: [DCBP034E2, DCBP034E],
+  },
+  {
+    id: "dewalt-DCB205C2K",
+    name: "KIT 2 BATERIAS 20V MAX* LI-ION 5AH E CARREGADOR BIVOLT E BOLSA  - PREMIUM",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Kit com 2 baterias compactas de íon-lítio 20V MAX e carregador bivolt. Ideal para profissionais que precisam de alta autonomia e desempenho em suas ferramentas.",
+    image: [DCB205C2K, DCB205C2],
   },
   {
     id: "dewalt-dccs623b",
@@ -229,6 +437,15 @@ export const PRODUCTS: Product[] = [
     description:
       "Lanterna de trabalho LED com cabeçote giratório e gancho de fixação. Alta luminosidade para oficinas e obras.",
     image: [dewaltLanterna, lanterna1],
+  },
+  {
+    id: "dewalt-DCD700C2",
+    name: "PARAFUSADEIRA/FURADEIRA 3/8” (10 mm) 12V MAX* LI-ION 2 BATERIAS 1,3AH CARREGADOR BIVOLT E BOLSA",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Compacta e leve com carregador e bolsa.",
+    image: [DCD700C2, DCD700C],
   },
   {
     id: "dewalt-12v-max",
@@ -267,6 +484,15 @@ export const PRODUCTS: Product[] = [
     image: [dewaltDch263b, martelete1],
   },
   {
+    id: "dewalt-eletrop",
+    name: "MARTELETE PERFURADOR / ROMPEDOR SDS PLUS 220V 800W 2,6J 2,6KG 3 MODOS COM MALETA",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "perfurador com e sem impacto/rompedor",
+    image: [eletrop, eletrop1],
+  },
+  {
     id: "dewalt-politriz",
     name: "Politriz/Lixadeira Angular 180MM 1250W Dewalt DWP849X-B2",
     brand: "DeWalt",
@@ -294,6 +520,15 @@ export const PRODUCTS: Product[] = [
     image: [dewaltDcf512b, catraca],
   },
   {
+    id: "dewalt-furadeira-dwd",
+    name: "FURADEIRA DE IMPACTO 1/2” (13 mm) 750W VVR",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "Furadeira de impacto com fio",
+    image: [dwd, dwd1],
+  },
+  {
     id: "dewalt-furadeira-fio-13mm",
     name: "Furadeira com Fio 1/2\" 13mm com Punho Lateral",
     brand: "DeWalt",
@@ -310,6 +545,15 @@ export const PRODUCTS: Product[] = [
     description:
       "Parafusadeira para gesso acartonado com bico limitador de profundidade, motor brushless e alta autonomia. Acompanha bateria XR.",
     image: [dewaltDrywall, parafusadeira5],
+  },
+  {
+    id: "dewalt-bolsa",
+    name: "BOLSA PORTA FERRAMENTAS 14",
+    brand: "DeWalt",
+    category: "Ferramentas",
+    description:
+      "bolsa para tranportar ferramentas .",
+    image: [DWST83489LA, DWST83489],
   },
 
 
@@ -377,6 +621,76 @@ export const PRODUCTS: Product[] = [
       "Potência : 530W | Tensão : 220V | Vazão de ar : 2,3 m³/min | Velocidade do ar : até 90 m/s | Vel. variável : Sim | Bico direcionador : Removível | Cabo : 2 m | Peso : 1,5 Kg | Uso : Limpeza de bancadas, máquinas e painéis elétricos",
     image: makitaM4000g,
   },
+
+  // STANLEY
+  {
+    id: "parafusadeira-stanley",
+    name: "Parafusadeira | Furadeira Imp. 13mm 20v Scd711b S/bat Stanley",
+    brand: "Stanley",
+    category: "Ferramentas",
+    description:
+      "Parafusadeira e Furadeira de Impacto 20V com mandril de 13mm, motor potente e bateria de longa duração. Ideal para trabalhos em madeira, metal e alvenaria.",
+    image: stanley1,
+  },
+  {
+    id: "bateria-stanley",
+    name: "BATERIA 2AH SISTEMA V20 STANLEY SB202-BR",
+    brand: "Stanley",
+    category: "Ferramentas",
+    description:
+      "bateria recarregável de alto desempenho para ferramentas elétricas sem fio da linha V20",
+    image: stanley2,
+  },
+  {
+    id: "bolsa-stanley",
+    name: "Bolsa Para Organizar e Transportar Ferramentas 12 STST512114 Stanley",
+    brand: "Stanley",
+    category: "Ferramentas",
+    description:
+      "Possui 12 bolsos, sendo 6 bolsos externos e 6 internos .",
+    image: stanley3,
+  },
+
+  // BLACK
+  {
+    id: "black-parafusadeira",
+    name: "Furadeira Parafusadeira 3/8 12V Bivolt com 13 Acessórios LD12SP-BR BLACK + DECKER",
+    brand: "Black + Decker",
+    category: "Ferramentas",
+    description:
+      "parafusadeira leve, sem fio e bivolt, ideal para montagem de móveis, reparos e furações leves em madeira e metal",
+    image: black1,
+  },
+  {
+    id: "black-esm",
+    name: "Esmerilhadeira Ângular G650-BR 4.1/2 650W 127V Black&Decker",
+    brand: "Black + Decker",
+    category: "Ferramentas",
+    description:
+      "esmerilhadeira elétrica compacta de 650W de potência e rotação de 12.000 RPM, indicada para cortes, desbastes e acabamentos em metais e alvenaria",
+    image: black2,
+  },
+  {
+    id: "black-fura",
+    name: "Furadeira De Impacto 1/2 , 650 W, 127 V, Bed713650-br Black",
+    brand: "Black + Decker",
+    category: "Ferramentas",
+    description:
+      "Furadeira elétrica compacta e versátil, ideal para perfurações em alvenaria, madeira e metal .",
+    image: black3,
+  },
+  {
+    id: "black-fura",
+    name: "Furadeira Impacto Black+Decker BED710450-B2 3/8 450W 220V",
+    brand: "Black + Decker",
+    category: "Ferramentas",
+    description:
+      "Furadeira leve e compacta, ideal para pequenos reparos e furos em madeira, metal e alvenaria .",
+    image: black4,
+  },
+
+
+
 
   // Elgin
   {
