@@ -680,7 +680,7 @@ export const PRODUCTS: Product[] = [
     image: black3,
   },
   {
-    id: "black-fura",
+    id: "black-imp",
     name: "Furadeira Impacto Black+Decker BED710450-B2 3/8 450W 220V",
     brand: "Black + Decker",
     category: "Ferramentas",
