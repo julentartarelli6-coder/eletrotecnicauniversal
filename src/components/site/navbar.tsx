@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, Phone } from "lucide-react";
 import logo from "@/assets/logo-mark.png";
+import { ProductSearch } from "@/components/site/product-search";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { SITE, whatsappLink } from "@/lib/site";
@@ -78,6 +79,8 @@ export function Navbar() {
               WhatsApp
             </a>
           </Button>
+
+          <ProductSearch />
 
           <Button asChild variant="glass" size="icon" aria-label="Ligar agora" className="sm:hidden">
             <a href={SITE.phoneHref}>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { ChevronLeft, ChevronRight, MessageCircle, X } from "lucide-react";
+import { PRODUCT_SELECT_EVENT } from "@/components/site/product-search";
 import { Reveal, SectionHeading } from "@/components/site/section";
 import { Button } from "@/components/ui/button";
 import { PRODUCTS, CATEGORIES, type Product, type ProductCategory } from "@/data/products";
@@ -94,7 +95,7 @@ function Lightbox({
   return typeof document !== "undefined" ? createPortal(content, document.body) : null;
 }
 
-function ProductCard({ product }: { product: Product }) {
+function ProductCard({ product, highlighted }: { product: Product; highlighted: boolean }) {
   const images = Array.isArray(product.image) ? product.image : [product.image];
 
   const [index, setIndex] = useState(0);
@@ -104,7 +105,13 @@ function ProductCard({ product }: { product: Product }) {
   const go = (dir: number) => setIndex((i) => (i + dir + images.length) % images.length);
 
   return (
-    <article className="card-lift group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
+    <article
+      id={`produto-${product.id}`}
+      className={cn(
+        "card-lift group flex h-full scroll-mt-28 flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-soft transition-shadow duration-500",
+        highlighted && "ring-4 ring-brand-red ring-offset-2",
+      )}
+    >
       <div className="relative aspect-4/3 overflow-hidden bg-secondary">
         <img
           src={images[index]}
@@ -192,6 +199,28 @@ function ProductCard({ product }: { product: Product }) {
 
 export function Products() {
   const [active, setActive] = useState<Filter>("Todos");
+  const [highlighted, setHighlighted] = useState<string | null>(null);
+
+  useEffect(() => {
+    const onSelect = (e: Event) => {
+      const id = (e as CustomEvent<string>).detail;
+      setActive("Todos");
+      setHighlighted(id);
+      requestAnimationFrame(() => {
+        document
+          .getElementById(`produto-${id}`)
+          ?.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    };
+    window.addEventListener(PRODUCT_SELECT_EVENT, onSelect);
+    return () => window.removeEventListener(PRODUCT_SELECT_EVENT, onSelect);
+  }, []);
+
+  useEffect(() => {
+    if (!highlighted) return;
+    const timer = window.setTimeout(() => setHighlighted(null), 2500);
+    return () => window.clearTimeout(timer);
+  }, [highlighted]);
   const filtered =
     active === "Todos" ? PRODUCTS : PRODUCTS.filter((p) => p.category === active);
 
@@ -225,7 +254,7 @@ export function Products() {
         <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((product, i) => (
             <Reveal as="li" key={product.id} delay={(i % 3) * 90}>
-              <ProductCard product={product} />
+              <ProductCard product={product} highlighted={highlighted === product.id} />
             </Reveal>
           ))}
         </ul>
